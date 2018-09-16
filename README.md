@@ -6,6 +6,7 @@ Resumo de utilização do GitHub:
 
 O GitHub serve basicamente para se desenvolver um trabalho em equipe de forma que todos os integrantes possam alterar o programa ao mesmo tempo.  
 Cada modificação de um integrante será submetida à avaliação de todos os outros e só será adicionada ao projeto quando todos a aprovarem.
+Resumindo são criadas várias ramificações do projeto (branches) e quando aprovadas são mescladas (merge) com a ramificação principal (master branch).
 
 ## Página Code: 
 Possui todos os arquivos de código do projeto sendo os mesmos podendo ser lidos e modificados a partir daqui.
