@@ -13,6 +13,8 @@ Possui todos os arquivos de código do projeto sendo os mesmos podendo ser lidos
 
 ## Página Issues: 
 Refere-se a tarefas a se tratar no projeto, tais como coisas a se fazer, bugs, etc...
+Possui basicamente tudo que se deve fazer no projeto.
+Cada participante pode pegar apenas um dos issues (que vai ser uma pequena parte do projeto) e trabalhar só nele, então dessa forma o trabalho é feito mais rápido e mais fácil.
 
 ## Página Pull requests: 
 É nessa página onde aparecem as solicitações de alteração de qualquer coisa no projeto, sendo que para toda alteração será possível discutir sobre ela.  
