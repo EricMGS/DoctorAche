@@ -16,3 +16,14 @@ CREATE TABLE IF NOT EXISTS `doencas` (
     CONSTRAINT `pk_doenca` PRIMARY KEY (`id_doenca`)
     
 )DEFAULT CHARSET = utf8;
+
+
+
+CREATE TABLE IF NOT EXISTS `sintomas` (
+
+	`id_sintoma` 	INT				NOT NULL AUTO_INCREMENT,
+    `nome` 			VARCHAR(250)  	NOT NULL,
+    
+    CONSTRAINT `pk_sintoma` PRIMARY KEY (`id_sintoma`)
+    
+)DEFAULT CHARSET = utf8;
