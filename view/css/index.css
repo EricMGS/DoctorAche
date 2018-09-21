@@ -1,0 +1,25 @@
+body {
+	min-height: 100vh; /* vh = viewport-height */
+	background-color: #ccc;
+	background-image: url('https://picsum.photos/g/1500/800?random');
+}
+
+.layout-chat {
+	background-color: #00000052;
+    padding: 30px;
+}
+
+
+
+/*---===#@#===---===#@#===---===#@#===---===#@#===---===#@#===---===#@#===---===#@#===---===#@#===---===#@#===---*/
+
+
+
+/*----------------------------------------------
+     Chat
+----------------------------------------------*/
+
+.chat {
+	background-color: #fff;
+    padding: 15px;
+}
