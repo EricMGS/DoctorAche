@@ -1,0 +1,35 @@
+Doença: Febre Amarela
+Sintomas: Febre alta,Mal estar,Dor de cabeça,Dor muscular,Calafrios,Náuseas,Vômitos,Diarréia,Sangramentos
+
+Doença: Febre do Mayaro
+Sintomas: Febre alta,Dores articulares,Dor de cabeça,Exantema,Vômitos,Linfonodos generalizados
+
+Doença: Febre do Nilo
+Sintomas: Febre,Dores musculares,Mal estar,Náusea,Vômito,Diarréia,Enxantema
+
+Doença: Febre Maculosa
+Sintomas: Febre,Cefaleia,Mialgia,Náusea,Vômito
+
+Doença: Fibrilação Atrial
+Sintomas: Palpitação,Dor torácica,Tontura,Desmaio,Falta de ar
+
+Doença: Fibrose cística
+Sintomas: Perda de peso,Tosse crônica,Sinusite crônica,Diabetes,Infecção respiratória,Infertilidade,Sangramento pulmonar
+
+Doença: Flutter Atrial
+Sintomas:Palpitação,Dor no peito,Tontura,Falta de ar
+
+Doença: Fratura do fêmur
+Sintomas: Dor na virilha,Dor na coxa,Dor lombar,Dificuldade de ficar em pé
+
+Doença: Fratura vertebral por osteoporose
+Sintomas: Dor nas costas em certo local,Perda de altura,Curvatura da coluna,Cifose
+
+Doença: Gastrite
+Sintomas: Gases,Mal estar,Dor de estômago,Desconforto abdominal,Náusea,Vômito,Indigestão,Queimação
+
+Doença: Glaucoma
+Sintomas: Lentidão na leitura,Alteração na adaptação ao ambiente,Demora para perceber contrastes
+
+Doença: Gripe H1N1
+Sintomas: Febre,Dor de garganta,Dor de cabeça,Dor muscular,Dor nas articulações,Falta de apetite,Coriza,Tosse,Piora de asma,Diarréia,Vômitos
