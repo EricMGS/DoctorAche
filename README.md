@@ -7,3 +7,4 @@ main: arquivo principal do código
 spellChecker: corretor ortografico (corrige sintomas digitados pelo usuário baseando-se em uma lista de todos os sintomas)
 
 doencas: arquivo com relações de doença-sintoma
+
