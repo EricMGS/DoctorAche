@@ -8,3 +8,4 @@ spellChecker: corretor ortografico (corrige sintomas digitados pelo usuário bas
 
 doencas: arquivo com relações de doença-sintomas
 
+a
