@@ -43,19 +43,18 @@ def compareStrings(str1, str2):
     return  (2 * intersection) / union
     
 def spellChecker(string, wordlist):
-    class Match:
-        def __init__(self):
-            self.word = ''
-            self.probability = 0
-    
-    match = Match()
-    for word in wordlist:
-        probability = compareStrings(word, string) 
-        if probability > match.probability:
-            match.word = word
-            match.probability = probability
-    
-    if match.probability == 0:
-        return None
-    
-    return match.word
+	class Match:
+		def __init__(self):
+			self.word = ''
+			self.probability = 0
+
+	match = []
+	for word in wordlist:
+		probability = compareStrings(word, string)
+		m = Match()
+		m.nome = word
+		m.probability = probability
+		match.append(m) 
+
+	match.sort(reverse=True, key= lambda x: x.probability)
+	return [x.nome for x in match]
