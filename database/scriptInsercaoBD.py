@@ -115,7 +115,7 @@ def consultaRelacao(nome, opcao): #opcao 1 para buscar doenca, opcao 2 para busc
 		else:
 			for r in relacoes:
 				print(r)
-				
+
 		input('\nAperte Enter para continuar...')
 
 def inserirRelacao(doenca, sintoma):
@@ -164,7 +164,6 @@ while opcao != 'S':
 	c.execute('select nome from sintomas')
 	for linha in c:
 		lista_sintomas.append(linha[0]) #[0] pois c é uma lista de tuplas
-
 
 
 	if opcao == '0': #consultar
