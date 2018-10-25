@@ -182,22 +182,28 @@ while opcao != 'S':
 
 	elif opcao == '1': #inserir
 		if opcao2 == '0': #doença
+			os.system('clear')
 			insercao = input('Digite o nome da doença à inserir (0 para sair): ')
 			while insercao != '0':
 				inserir(insercao, lista_doencas, 'doencas')
+				os.system('clear')
 				insercao = input('Digite o nome da doença à inserir (0 para sair): ')
 
 		elif opcao2 == '1': #sintoma
+			os.system('clear')
 			insercao = input('Digite o nome do sintomas à inserir (0 para sair): ')
 			while insercao != '0':
 				inserir(insercao, lista_sintomas, 'sintomas')
+				os.system('clear')
 				insercao = input('Digite o nome do sintomas à inserir (0 para sair): ')
 
 		elif opcao2 == '2': #relação
+			os.system('clear')
 			nome_doenca = input('Digite o nome da doença (0 para sair): ')
 			while nome_doenca != '0':
 				nome_sintoma = input('Digite o nome do sintoma: ')
 				inserirRelacao(nome_doenca, nome_sintoma)
+				os.system('clear')
 				nome_doenca = input('Digite o nome da doença (0 para sair): ')
 			
 
