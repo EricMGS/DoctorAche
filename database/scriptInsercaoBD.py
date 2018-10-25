@@ -16,7 +16,6 @@ from spellChecker import spellChecker as sc
 #########################################################################################
 # FUNÇÕES
 
-
 def menu():
 	os.system('clear')
 	print('0 - Consultar')
@@ -33,6 +32,14 @@ def submenu():
 	print('1 - Sintoma')
 	print('2 - Relação')
 	print('\nC - Cancelar\n')
+	op = input('Digite a opção: ')
+	os.system('clear')
+	return op
+
+def submenu2():
+	os.system('clear')
+	print('0 - Doença')
+	print('1 - Sintoma')
 	op = input('Digite a opção: ')
 	os.system('clear')
 	return op
@@ -64,7 +71,44 @@ def remover(nome, lista, tabela):
 		 print('\nCancelado')
 	input('Aperte Enter para continuar...')
 
-###############################################################################################3
+def consultaRelacao(nome, opcao): #opcao 1 para buscar doenca, opcao 2 para buscar sintoma
+	if opcao == '0':
+		c.execute("select id from doencas where nome='%s'" %nome)
+		for linha in c:
+			id_doenca = linha[0]
+
+		c.execute("select id_sintoma from relacoes where id_doenca = %d" %id_doenca)	
+		relacoes = []
+		for linha in c:
+			relacoes.append(linha[0])
+
+		for i in range(len(relacoes)):
+			c.execute("select nome from sintomas where id=%d" %relacoes[i])
+			for linha in c:
+				relacoes[i] = linha[0]
+
+		print(relacoes)
+		input('\nAperte Enter para continuar...')
+
+	elif opcao == '1':
+		c.execute("select id from sintomas where nome='%s'" %nome)
+		for linha in c:
+			id_sintoma = linha[0]
+
+		c.execute("select id_doenca from relacoes where id_sintoma = %d" %id_sintoma)	
+		relacoes = []
+		for linha in c:
+			relacoes.append(linha[0])
+
+		for i in range(len(relacoes)):
+			c.execute("select nome from doencas where id=%d" %relacoes[i])
+			for linha in c:
+				relacoes[i] = linha[0]
+
+		print(relacoes)
+		input('\nAperte Enter para continuar...')
+	
+###############################################################################################
 # MAIN
 
 conn = sqlite3.connect('database')
@@ -74,7 +118,7 @@ opcao = menu()
 while opcao != 'S':
 	opcao2 = submenu()
 
-
+	#Gera uma cópia local das tabelas para fazer a análise de semelhanças
 	lista_doencas = []
 	c.execute('select nome from doencas')
 	for linha in c:
@@ -97,6 +141,9 @@ while opcao != 'S':
 			consultar(consulta, lista_sintomas)
 
 		elif opcao2 == '2': #relação
+			tipo_busca = submenu2()
+			nome = input('Digite o nome a buscar: ')
+			consultaRelacao(nome, tipo_busca)
 			pass
 
 	elif opcao == '1': #inserir
@@ -109,6 +156,7 @@ while opcao != 'S':
 			inserir(insercao, lista_sintomas, 'sintomas')
 
 		elif opcao2 == '1': #relação
+
 			pass
 
 	elif opcao == '2': #remover
