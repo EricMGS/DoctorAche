@@ -107,7 +107,33 @@ def consultaRelacao(nome, opcao): #opcao 1 para buscar doenca, opcao 2 para busc
 
 		print(relacoes)
 		input('\nAperte Enter para continuar...')
+
+def inserirRelacao(doenca, sintoma):
+	c.execute("select id from doencas where nome='%s'" %doenca)
+	for linha in c:
+		id_doenca = linha[0]
+
+	c.execute("select id from sintomas where nome='%s'" %sintoma)
+	for linha in c:
+		id_sintoma = linha[0]
+
+	c.execute("insert into relacoes values(null, %d, %d)" %(id_doenca, id_sintoma))
+	print("Relação inserida")
+	input('\nAperte Enter para continuar...')
 	
+def removerRelacao(doenca, sintoma):
+	c.execute("select id from doencas where nome='%s'" %doenca)
+	for linha in c:
+		id_doenca = linha[0]
+
+	c.execute("select id from sintomas where nome='%s'" %sintoma)
+	for linha in c:
+		id_sintoma = linha[0]
+
+	c.execute("delete from relacoes where id_doenca=%d and id_sintoma=%d" %(doenca, sintoma))
+	print('Relação removida')
+	input('\nAperte Enter para continuar...')
+
 ###############################################################################################
 # MAIN
 
@@ -155,8 +181,10 @@ while opcao != 'S':
 			insercao = input('Digite o nome do sintomas à inserir: ')
 			inserir(insercao, lista_sintomas, 'sintomas')
 
-		elif opcao2 == '1': #relação
-
+		elif opcao2 == '2': #relação
+			nome_doenca = input('Digite o nome da doença: ')
+			nome_sintoma = input('Digite o nome do sintoma: ')
+			inserirRelacao(nome_doenca, nome_sintoma)
 			pass
 
 	elif opcao == '2': #remover
@@ -169,6 +197,7 @@ while opcao != 'S':
 			remover(remocao, lista_sintomas, 'sintomas')
 
 		elif opcao2 == '1': #relação
+
 			pass
 
 	conn.commit()
