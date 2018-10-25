@@ -87,7 +87,12 @@ def consultaRelacao(nome, opcao): #opcao 1 para buscar doenca, opcao 2 para busc
 			for linha in c:
 				relacoes[i] = linha[0]
 
-		print(relacoes)
+		if relacoes == []:
+			print('Nenhuma relação cadastrada')
+		else:
+			for r in relacoes:
+				print(r)
+
 		input('\nAperte Enter para continuar...')
 
 	elif opcao == '1':
@@ -105,7 +110,12 @@ def consultaRelacao(nome, opcao): #opcao 1 para buscar doenca, opcao 2 para busc
 			for linha in c:
 				relacoes[i] = linha[0]
 
-		print(relacoes)
+		if relacoes == []:
+			print('Nenhuma relação cadastrada')
+		else:
+			for r in relacoes:
+				print(r)
+				
 		input('\nAperte Enter para continuar...')
 
 def inserirRelacao(doenca, sintoma):
