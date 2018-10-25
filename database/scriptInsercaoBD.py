@@ -179,22 +179,27 @@ while opcao != 'S':
 			tipo_busca = submenu2()
 			nome = input('Digite o nome a buscar: ')
 			consultaRelacao(nome, tipo_busca)
-			pass
 
 	elif opcao == '1': #inserir
 		if opcao2 == '0': #doença
-			insercao = input('Digite o nome da doença à inserir: ')
-			inserir(insercao, lista_doencas, 'doencas')
+			insercao = input('Digite o nome da doença à inserir (0 para sair): ')
+			while insercao != '0':
+				inserir(insercao, lista_doencas, 'doencas')
+				insercao = input('Digite o nome da doença à inserir (0 para sair): ')
 
 		elif opcao2 == '1': #sintoma
-			insercao = input('Digite o nome do sintomas à inserir: ')
-			inserir(insercao, lista_sintomas, 'sintomas')
+			insercao = input('Digite o nome do sintomas à inserir (0 para sair): ')
+			while insercao != '0':
+				inserir(insercao, lista_sintomas, 'sintomas')
+				insercao = input('Digite o nome do sintomas à inserir (0 para sair): ')
 
 		elif opcao2 == '2': #relação
-			nome_doenca = input('Digite o nome da doença: ')
-			nome_sintoma = input('Digite o nome do sintoma: ')
-			inserirRelacao(nome_doenca, nome_sintoma)
-			pass
+			nome_doenca = input('Digite o nome da doença (0 para sair): ')
+			while nome_doenca != '0':
+				nome_sintoma = input('Digite o nome do sintoma: ')
+				inserirRelacao(nome_doenca, nome_sintoma)
+				nome_doenca = input('Digite o nome da doença (0 para sair): ')
+			
 
 	elif opcao == '2': #remover
 		if opcao2 == '0': #doença
