@@ -29,6 +29,12 @@ def consultar(nome, lista, limite=10):
 		print(word)
 	input('\n\nAperte Enter para continuar...')
 
+def inserir(nome, lista, limite=10):
+	pass
+
+def remover(nome, lista, limite=10):
+	pass
+
 
 conn = sqlite3.connect('database')
 c = conn.cursor()
@@ -58,7 +64,7 @@ while opcao != 'S':
 			print('\nOs sintomas mais semelhantes')
 			consultar(str1, lista_sintomas)
 
-		elif opcao2 == '2':
+		elif opcao2 == '2': #relação
 			pass
 
 		else:
