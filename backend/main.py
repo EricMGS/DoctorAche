@@ -13,5 +13,5 @@ for linha in c:
 	lista_sintomas.append(linha)
 
 sintomas = input('Digite os sintomas: ').split(',')
-
+print(lista_sintomas)
 c.close()
