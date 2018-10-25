@@ -53,8 +53,16 @@ def inserir(nome, lista, tabela):
 		 print('\nCancelado')
 	input('Aperte Enter para continuar...')
 
-def remover(nome, lista):
-	pass
+def remover(nome, lista, tabela):
+	consultar(nome, lista)
+	nome = input('Digite o nome igual à lista: ')
+	resposta = input('\nTem certeza que deseja remover? (S/N): ')
+	if resposta == 'S':
+		c.execute("delete from %s where nome='%s'" %(tabela, nome))
+		print('Elemento removido')
+	else:
+		 print('\nCancelado')
+	input('Aperte Enter para continuar...')
 
 ###############################################################################################3
 # MAIN
@@ -104,10 +112,16 @@ while opcao != 'S':
 			pass
 
 	elif opcao == '2': #remover
-		pass
-	elif opcao == 'S': #sair
-		pass
+		if opcao2 == '0': #doença
+			remocao = input('Digite o nome da doença à remover: ')
+			remover(remocao, lista_doencas, 'doencas')
 
+		elif opcao2 == '1': #sintoma
+			remocao = input('Digite o nome do sintoma à remover: ')
+			remover(remocao, lista_sintomas, 'sintomas')
+
+		elif opcao2 == '1': #relação
+			pass
 
 	conn.commit()
 	opcao = menu()
