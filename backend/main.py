@@ -5,6 +5,8 @@ from spellChecker import spellChecker as sc
 import sqlite3
 
 def provaveis(sintomas, lista_sintomas, lista_relacoes):
+
+	#Corrige os sintomas e substitui pelo id do mesmo
 	d = {}
 	for i in range(len(sintomas)):
 		sintomas[i] = sc(sintomas[i], lista_sintomas)[0]
@@ -12,6 +14,7 @@ def provaveis(sintomas, lista_sintomas, lista_relacoes):
 		for linha in c:
 			sintomas[i] = linha[0]
 
+	#Cria um dicionário com todas as doenças que contêm ao menos um dos sintomas 
 	for e in lista_relacoes:
 		if e[1] in sintomas:
 			if e[0] in d:
@@ -19,6 +22,7 @@ def provaveis(sintomas, lista_sintomas, lista_relacoes):
 			else:
 				d.update({e[0]:1})
 	
+	#Ordena por quantidade de aparições de uma doença e substitui id pelo nome
 	d =  sorted(d, key= lambda e: d[e], reverse=True)
 	for i in range(len(d)):
 		c.execute("select nome from doencas where id=%d" %d[i])
@@ -26,10 +30,6 @@ def provaveis(sintomas, lista_sintomas, lista_relacoes):
 			d[i] = linha[0]
 
 	return d
-
-
-
-
 
 
 conn = sqlite3.connect('../database/database')
