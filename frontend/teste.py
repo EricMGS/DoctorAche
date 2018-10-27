@@ -61,25 +61,32 @@ class Ui_Dialog(object):
     	item = self.list_sintomas.takeItem(self.list_sintomas.currentRow())
     	item = None
 
+    def button_ok_clicked(self):
+    	pass
+
     def setupUi(self, Dialog):
-        Dialog.setObjectName("Dialog")
-        Dialog.resize(673, 510)
+        icon = QtGui.QIcon()
+        icon.addPixmap(QtGui.QPixmap("img/BalaoFala.jpg"), QtGui.QIcon.Normal, QtGui.QIcon.Off)
+
         font = QtGui.QFont()
         font.setFamily("Arial")
         font.setPointSize(10)
+
+        Dialog.setObjectName("Dialog")
+        Dialog.resize(673, 510)               
         Dialog.setFont(font)
-        icon = QtGui.QIcon()
-        icon.addPixmap(QtGui.QPixmap("img/BalaoFala.jpg"), QtGui.QIcon.Normal, QtGui.QIcon.Off)
         Dialog.setWindowIcon(icon)
         Dialog.setStyleSheet("background-color: rgb(255, 255, 255);")
 
         font = QtGui.QFont()
         font.setFamily("Arial")
         font.setPointSize(9)
+
         self.btn_ok = QtWidgets.QPushButton(Dialog)
         self.btn_ok.setGeometry(QtCore.QRect(590, 390, 60, 60))
         self.btn_ok.setFont(font)
         self.btn_ok.setObjectName("btn_ok")
+        self.btn_ok.clicked.connect(self.button_ok_clicked)
 
         self.btn_add = QtWidgets.QPushButton(Dialog)
         self.btn_add.setGeometry(QtCore.QRect(280, 40, 60, 60))
