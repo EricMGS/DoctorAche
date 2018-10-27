@@ -62,7 +62,9 @@ class Ui_Dialog(object):
     	item = None
 
     def button_ok_clicked(self):
-    	pass
+    	items = [str(self.list_sintomas.item(i).text()) for i in range(self.list_sintomas.count())]
+    	doctor.get_sintomas(items)
+    	resultado = doctor.provaveis
 
     def setupUi(self, Dialog):
         icon = QtGui.QIcon()
