@@ -1,119 +1,148 @@
 # -*- coding: utf-8 -*-
 
-# Form implementation generated from reading ui file 'mainwindow.ui'
-#
-# Created by: PyQt5 UI code generator 5.11.3
-#
-# WARNING! All changes made in this file will be lost!
-
+import sys
+sys.path.append('../backend/')
 from PyQt5 import QtCore, QtGui, QtWidgets
+from PyQt5.QtCore import Qt, QSortFilterProxyModel
+from PyQt5.QtWidgets import QCompleter, QComboBox
+from DoctorAche import DoctorAche as DA
+from spellChecker import spellChecker as SC
+
+class ExtendedComboBox(QComboBox):
+    def __init__(self, parent=None):
+        super(ExtendedComboBox, self).__init__(parent)
+
+        self.setFocusPolicy(Qt.StrongFocus)
+        self.setEditable(True)
+
+        # add a filter model to filter matching items
+        self.pFilterModel = QSortFilterProxyModel(self)
+        self.pFilterModel.setFilterCaseSensitivity(Qt.CaseInsensitive)
+        self.pFilterModel.setSourceModel(self.model())
+
+        # add a completer, which uses the filter model
+        self.completer = QCompleter(self.pFilterModel, self)
+        # always show all (filtered) completions
+        self.completer.setCompletionMode(QCompleter.UnfilteredPopupCompletion)
+        self.setCompleter(self.completer)
+
+        # connect signals
+        self.lineEdit().textEdited.connect(self.pFilterModel.setFilterFixedString)
+        self.completer.activated.connect(self.on_completer_activated)
+
+    # on selection of an item from the completer, select the corresponding item from combobox 
+    def on_completer_activated(self, text):
+        if text:
+            index = self.findText(text)
+            self.setCurrentIndex(index)
+            self.activated[str].emit(self.itemText(index))
+
+    # on model change, update the models of the filter and completer as well 
+    def setModel(self, model):
+        super(ExtendedComboBox, self).setModel(model)
+        self.pFilterModel.setSourceModel(model)
+        self.completer.setModel(self.pFilterModel)
+
+
+    # on model column change, update the model column of the filter and completer as well
+    def setModelColumn(self, column):
+        self.completer.setCompletionColumn(column)
+        self.pFilterModel.setFilterKeyColumn(column)
+        super(ExtendedComboBox, self).setModelColumn(column)  
 
 class Ui_MainWindow(object):
+    def button_add_clicked(self):
+        if self.cmb_entrada.currentText() in doctor.lista_sintomas:
+            items = [str(self.list_sintomas.item(i).text()) for i in range(self.list_sintomas.count())] 
+            if self.cmb_entrada.currentText() not in items:
+                self.list_sintomas.addItem(self.cmb_entrada.currentText())
+
+    def button_del_clicked(self):
+    	item = self.list_sintomas.takeItem(self.list_sintomas.currentRow())
+    	item = None
+
+    def button_ok_clicked(self):
+        items = [str(self.list_sintomas.item(i).text()) for i in range(self.list_sintomas.count())]
+        doctor.get_sintomas(items)
+        doctor.provaveis()
+        res = doctor.resultado
+        texto = ("Você provavelmente está com:\n")
+        if len(res) == 0:
+            texto = 'Nenhum sintoma foi informado'
+        else:
+            texto += '1- ' + res[0] + '\n'
+            if len(res) >= 2:
+                texto += '2- ' + res[1] + '\n'
+            if len(res) >= 3:
+                texto += '3- ' + res[2] + '\n'
+
+        self.lbl_res.setText(texto)
+
+
     def setupUi(self, MainWindow):
+        icone = QtGui.QIcon()
+        icone.addPixmap(QtGui.QPixmap('Dr.jpg'))
+
+        font = QtGui.QFont()
+        font.setFamily("Arial")
+        font.setPointSize(10)
+
         MainWindow.setObjectName("MainWindow")
-        MainWindow.setEnabled(True)
-        MainWindow.resize(395, 408)
-        sizePolicy = QtWidgets.QSizePolicy(QtWidgets.QSizePolicy.Maximum, QtWidgets.QSizePolicy.Preferred)
-        sizePolicy.setHorizontalStretch(0)
-        sizePolicy.setVerticalStretch(0)
-        sizePolicy.setHeightForWidth(MainWindow.sizePolicy().hasHeightForWidth())
-        MainWindow.setSizePolicy(sizePolicy)
-        font = QtGui.QFont()
-        font.setFamily("Arial")
-        font.setPointSize(9)
+        MainWindow.resize(673, 510)               
         MainWindow.setFont(font)
-        MainWindow.setMouseTracking(False)
-        MainWindow.setTabletTracking(False)
-        icon = QtGui.QIcon()
-        icon.addPixmap(QtGui.QPixmap("img/Dr.jpg"), QtGui.QIcon.Normal, QtGui.QIcon.On)
-        MainWindow.setWindowIcon(icon)
-        MainWindow.setAutoFillBackground(False)
+        MainWindow.setWindowIcon(icone)
         MainWindow.setStyleSheet("background-color: rgb(255, 255, 255);")
-        self.centralWidget = QtWidgets.QWidget(MainWindow)
-        self.centralWidget.setObjectName("centralWidget")
-        self.Btn_Apagar = QtWidgets.QPushButton(self.centralWidget)
-        self.Btn_Apagar.setGeometry(QtCore.QRect(20, 330, 111, 31))
+        MainWindow.setWindowTitle("DoctorAche")
+
         font = QtGui.QFont()
         font.setFamily("Arial")
         font.setPointSize(9)
-        self.Btn_Apagar.setFont(font)
-        self.Btn_Apagar.setObjectName("Btn_Apagar")
-        self.Label_Inicial = QtWidgets.QLabel(self.centralWidget)
-        self.Label_Inicial.setGeometry(QtCore.QRect(20, 10, 291, 51))
-        self.Label_Inicial.setObjectName("Label_Inicial")
-        self.Btn_AplicarSintomas = QtWidgets.QPushButton(self.centralWidget)
-        self.Btn_AplicarSintomas.setGeometry(QtCore.QRect(140, 330, 111, 31))
-        self.Btn_AplicarSintomas.setObjectName("Btn_AplicarSintomas")
-        self.Btn_Pequisar = QtWidgets.QPushButton(self.centralWidget)
-        self.Btn_Pequisar.setGeometry(QtCore.QRect(260, 330, 111, 31))
-        self.Btn_Pequisar.setObjectName("Btn_Pequisar")
-        self.Cbx_Sintomas = QtWidgets.QComboBox(self.centralWidget)
-        self.Cbx_Sintomas.setGeometry(QtCore.QRect(20, 70, 281, 31))
-        self.Cbx_Sintomas.setObjectName("Cbx_Sintomas")
-        self.Cbx_Sintomas.addItem("")
-        self.Cbx_Sintomas.setItemText(0, "")
-        self.Cbx_Sintomas.addItem("")
-        self.Cbx_Sintomas.addItem("")
-        self.Cbx_Sintomas.addItem("")
-        self.Label_Sintomas = QtWidgets.QLabel(self.centralWidget)
-        self.Label_Sintomas.setEnabled(True)
-        self.Label_Sintomas.setGeometry(QtCore.QRect(20, 110, 281, 151))
-        self.Label_Sintomas.setMouseTracking(True)
-        self.Label_Sintomas.setTabletTracking(True)
-        self.Label_Sintomas.setAutoFillBackground(False)
-        self.Label_Sintomas.setTextFormat(QtCore.Qt.AutoText)
-        self.Label_Sintomas.setScaledContents(True)
-        self.Label_Sintomas.setAlignment(QtCore.Qt.AlignLeading|QtCore.Qt.AlignLeft|QtCore.Qt.AlignTop)
-        self.Label_Sintomas.setWordWrap(True)
-        self.Label_Sintomas.setObjectName("Label_Sintomas")
-        MainWindow.setCentralWidget(self.centralWidget)
-        self.menuBar = QtWidgets.QMenuBar(MainWindow)
-        self.menuBar.setGeometry(QtCore.QRect(0, 0, 395, 21))
-        self.menuBar.setObjectName("menuBar")
-        self.menuTools = QtWidgets.QMenu(self.menuBar)
-        self.menuTools.setObjectName("menuTools")
-        self.menuHelp = QtWidgets.QMenu(self.menuBar)
-        self.menuHelp.setObjectName("menuHelp")
-        MainWindow.setMenuBar(self.menuBar)
-        self.actionNovo_paciente = QtWidgets.QAction(MainWindow)
-        self.actionNovo_paciente.setIcon(icon)
-        self.actionNovo_paciente.setObjectName("actionNovo_paciente")
-        self.actionAdd_patient = QtWidgets.QAction(MainWindow)
-        self.actionAdd_patient.setObjectName("actionAdd_patient")
-        self.menuTools.addAction(self.actionAdd_patient)
-        self.menuBar.addAction(self.menuTools.menuAction())
-        self.menuBar.addAction(self.menuHelp.menuAction())
-        self.Label_Sintomas.setBuddy(self.Label_Sintomas)
 
-        self.retranslateUi(MainWindow)
+        self.btn_ok = QtWidgets.QPushButton(MainWindow)
+        self.btn_ok.setGeometry(QtCore.QRect(590, 390, 60, 60))
+        self.btn_ok.setFont(font)
+        self.btn_ok.setObjectName("btn_ok")
+        self.btn_ok.setText("OK")
+        self.btn_ok.clicked.connect(self.button_ok_clicked)
+
+        self.btn_add = QtWidgets.QPushButton(MainWindow)
+        self.btn_add.setGeometry(QtCore.QRect(280, 40, 60, 60))
+        self.btn_add.setFont(font)
+        self.btn_add.setObjectName("btn_add")
+        self.btn_add.setText("ADD")
+        self.btn_add.clicked.connect(self.button_add_clicked)
+
+        self.btn_del = QtWidgets.QPushButton(MainWindow)
+        self.btn_del.setGeometry(QtCore.QRect(350, 390, 60, 60))
+        self.btn_del.setFont(font)
+        self.btn_del.setObjectName("btn_del")
+        self.btn_del.setText("DEL")
+        self.btn_del.clicked.connect(self.button_del_clicked)
+
+        self.cmb_entrada = ExtendedComboBox(MainWindow)
+        self.cmb_entrada.setGeometry(QtCore.QRect(30, 40, 240, 60))
+        self.cmb_entrada.setObjectName("cmb_entrada")
+        self.cmb_entrada.addItems(doctor.lista_sintomas)
+        self.cmb_entrada.setCurrentText("")
+
+        self.list_sintomas = QtWidgets.QListWidget(MainWindow)
+        self.list_sintomas.setGeometry(QtCore.QRect(350, 40, 300, 320))
+        self.list_sintomas.setObjectName("list_sintomas")
+
+        self.lbl_res = QtWidgets.QLabel(MainWindow)
+        self.lbl_res.setGeometry(QtCore.QRect(30, 200, 240, 60))
+        self.lbl_res.setObjectName("lbl_res")
+        self.lbl_res.setText("")
+
         QtCore.QMetaObject.connectSlotsByName(MainWindow)
-        MainWindow.setTabOrder(self.Btn_AplicarSintomas, self.Btn_Apagar)
-
-    def retranslateUi(self, MainWindow):
-        _translate = QtCore.QCoreApplication.translate
-        MainWindow.setWindowTitle(_translate("MainWindow", "Ficha de sintomas"))
-        self.Btn_Apagar.setText(_translate("MainWindow", "Apagar sintomas"))
-        self.Label_Inicial.setText(_translate("MainWindow", "Olá [] ,digite seus sintomas abaixo:"))
-        self.Btn_AplicarSintomas.setText(_translate("MainWindow", "Aplicar sintomas"))
-        self.Btn_Pequisar.setText(_translate("MainWindow", "Pesquisar"))
-        self.Cbx_Sintomas.setItemText(1, _translate("MainWindow", "Dor de cabeça"))
-        self.Cbx_Sintomas.setItemText(2, _translate("MainWindow", "Diarréia"))
-        self.Cbx_Sintomas.setItemText(3, _translate("MainWindow", "Febre"))
-        self.Label_Sintomas.setText(_translate("MainWindow", "Sintomas:"))
-        self.menuTools.setTitle(_translate("MainWindow", "Ferramentas"))
-        self.menuHelp.setTitle(_translate("MainWindow", "Ajuda"))
-        self.actionNovo_paciente.setText(_translate("MainWindow", "Novo paciente"))
-        self.actionNovo_paciente.setToolTip(_translate("MainWindow", "Adicionar um novo paciente"))
-        self.actionNovo_paciente.setShortcut(_translate("MainWindow", "Ctrl+A"))
-        self.actionAdd_patient.setText(_translate("MainWindow", "Novo paciente"))
 
 
 if __name__ == "__main__":
-    import sys
+    doctor = DA()
+
     app = QtWidgets.QApplication(sys.argv)
     MainWindow = QtWidgets.QMainWindow()
     ui = Ui_MainWindow()
     ui.setupUi(MainWindow)
     MainWindow.show()
     sys.exit(app.exec_())
-
