@@ -58,7 +58,8 @@ class Ui_Dialog(object):
                 self.list_sintomas.addItem(self.cmb_entrada.currentText())
 
     def button_del_clicked(self):
-    	pass
+    	item = self.list_sintomas.takeItem(self.list_sintomas.currentRow())
+    	item = None
 
     def setupUi(self, Dialog):
         Dialog.setObjectName("Dialog")
