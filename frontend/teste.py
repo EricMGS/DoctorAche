@@ -57,6 +57,9 @@ class Ui_Dialog(object):
             if self.cmb_entrada.currentText() not in items:
                 self.list_sintomas.addItem(self.cmb_entrada.currentText())
 
+    def button_del_clicked(self):
+    	pass
+
     def setupUi(self, Dialog):
         Dialog.setObjectName("Dialog")
         Dialog.resize(673, 510)
@@ -83,6 +86,12 @@ class Ui_Dialog(object):
         self.btn_add.setObjectName("btn_add")
         self.btn_add.clicked.connect(self.button_add_clicked)
 
+        self.btn_del = QtWidgets.QPushButton(Dialog)
+        self.btn_del.setGeometry(QtCore.QRect(350, 390, 60, 60))
+        self.btn_del.setFont(font)
+        self.btn_del.setObjectName("btn_del")
+        self.btn_del.clicked.connect(self.button_del_clicked)
+
         self.cmb_entrada = ExtendedComboBox(Dialog)
         self.cmb_entrada.setGeometry(QtCore.QRect(30, 40, 240, 60))
         self.cmb_entrada.setObjectName("cmb_entrada")
@@ -100,7 +109,8 @@ class Ui_Dialog(object):
         _translate = QtCore.QCoreApplication.translate
         Dialog.setWindowTitle(_translate("Dialog", "teste"))
         self.btn_ok.setText(_translate("Dialog", "OK"))
-        self.btn_add.setText(_translate("Dialog", "Add"))
+        self.btn_add.setText(_translate("Dialog", "ADD"))
+        self.btn_del.setText(_translate("Dialog", "DEL"))
 
 
 if __name__ == "__main__":
