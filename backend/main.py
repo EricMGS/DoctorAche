@@ -1,6 +1,6 @@
 #!/usr/bin/env python3
 # -*- coding: utf-8 -*-
-
+#soprateste
 from spellChecker import spellChecker as sc
 import sqlite3
 
