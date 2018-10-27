@@ -50,8 +50,13 @@ class ExtendedComboBox(QComboBox):
         self.pFilterModel.setFilterKeyColumn(column)
         super(ExtendedComboBox, self).setModelColumn(column)  
 
-
 class Ui_Dialog(object):
+    def button_add_clicked(self):
+        if self.cmb_entrada.currentText() in doctor.lista_sintomas:
+            items = [str(self.list_sintomas.item(i).text()) for i in range(self.list_sintomas.count())] 
+            if self.cmb_entrada.currentText() not in items:
+                self.list_sintomas.addItem(self.cmb_entrada.currentText())
+
     def setupUi(self, Dialog):
         Dialog.setObjectName("Dialog")
         Dialog.resize(673, 510)
@@ -64,22 +69,28 @@ class Ui_Dialog(object):
         Dialog.setWindowIcon(icon)
         Dialog.setStyleSheet("background-color: rgb(255, 255, 255);")
 
-        self.btn_ok = QtWidgets.QPushButton(Dialog)
-        self.btn_ok.setGeometry(QtCore.QRect(390, 390, 171, 51))
         font = QtGui.QFont()
         font.setFamily("Arial")
         font.setPointSize(9)
+        self.btn_ok = QtWidgets.QPushButton(Dialog)
+        self.btn_ok.setGeometry(QtCore.QRect(590, 390, 60, 60))
         self.btn_ok.setFont(font)
         self.btn_ok.setObjectName("btn_ok")
 
+        self.btn_add = QtWidgets.QPushButton(Dialog)
+        self.btn_add.setGeometry(QtCore.QRect(280, 40, 60, 60))
+        self.btn_add.setFont(font)
+        self.btn_add.setObjectName("btn_add")
+        self.btn_add.clicked.connect(self.button_add_clicked)
+
         self.cmb_entrada = ExtendedComboBox(Dialog)
-        self.cmb_entrada.setGeometry(QtCore.QRect(50, 40, 241, 61))
+        self.cmb_entrada.setGeometry(QtCore.QRect(30, 40, 240, 60))
         self.cmb_entrada.setObjectName("cmb_entrada")
         self.cmb_entrada.addItems(doctor.lista_sintomas)
         self.cmb_entrada.setCurrentText("")
 
-        self.list_sintomas = QtWidgets.QListView(Dialog)
-        self.list_sintomas.setGeometry(QtCore.QRect(350, 30, 291, 321))
+        self.list_sintomas = QtWidgets.QListWidget(Dialog)
+        self.list_sintomas.setGeometry(QtCore.QRect(350, 40, 300, 320))
         self.list_sintomas.setObjectName("list_sintomas")
 
         self.retranslateUi(Dialog)
@@ -89,6 +100,7 @@ class Ui_Dialog(object):
         _translate = QtCore.QCoreApplication.translate
         Dialog.setWindowTitle(_translate("Dialog", "teste"))
         self.btn_ok.setText(_translate("Dialog", "OK"))
+        self.btn_add.setText(_translate("Dialog", "Add"))
 
 
 if __name__ == "__main__":
@@ -100,4 +112,3 @@ if __name__ == "__main__":
     ui.setupUi(Dialog)
     Dialog.show()
     sys.exit(app.exec_())
-
