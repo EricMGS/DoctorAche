@@ -1,10 +1,10 @@
 # -*- coding: utf-8 -*-
 
 import sys
-sys.path.append('../backend/')
 from PyQt5 import QtCore, QtGui, QtWidgets
 from PyQt5.QtCore import Qt, QSortFilterProxyModel
 from PyQt5.QtWidgets import QCompleter, QComboBox
+sys.path.append('../backend/')
 from DoctorAche import DoctorAche as DA
 from spellChecker import spellChecker as SC
 
@@ -50,7 +50,7 @@ class ExtendedComboBox(QComboBox):
         self.pFilterModel.setFilterKeyColumn(column)
         super(ExtendedComboBox, self).setModelColumn(column)  
 
-class Ui_MainWindow(object):
+class Ui_Dialog(object):
     def button_add_clicked(self):
         if self.cmb_entrada.currentText() in doctor.lista_sintomas:
             items = [str(self.list_sintomas.item(i).text()) for i in range(self.list_sintomas.count())] 
@@ -62,87 +62,73 @@ class Ui_MainWindow(object):
     	item = None
 
     def button_ok_clicked(self):
-        items = [str(self.list_sintomas.item(i).text()) for i in range(self.list_sintomas.count())]
-        doctor.get_sintomas(items)
-        doctor.provaveis()
-        res = doctor.resultado
-        texto = ("Você provavelmente está com:\n")
-        if len(res) == 0:
-            texto = 'Nenhum sintoma foi informado'
-        else:
-            texto += '1- ' + res[0] + '\n'
-            if len(res) >= 2:
-                texto += '2- ' + res[1] + '\n'
-            if len(res) >= 3:
-                texto += '3- ' + res[2] + '\n'
+    	items = [str(self.list_sintomas.item(i).text()) for i in range(self.list_sintomas.count())]
+    	doctor.get_sintomas(items)
+    	resultado = doctor.provaveis
 
-        self.lbl_res.setText(texto)
-
-
-    def setupUi(self, MainWindow):
-        icone = QtGui.QIcon()
-        icone.addPixmap(QtGui.QPixmap('Dr.jpg'))
+    def setupUi(self, Dialog):
+        icon = QtGui.QIcon()
+        icon.addPixmap(QtGui.QPixmap("img/BalaoFala.jpg"), QtGui.QIcon.Normal, QtGui.QIcon.Off)
 
         font = QtGui.QFont()
         font.setFamily("Arial")
         font.setPointSize(10)
 
-        MainWindow.setObjectName("MainWindow")
-        MainWindow.resize(673, 510)               
-        MainWindow.setFont(font)
-        MainWindow.setWindowIcon(icone)
-        MainWindow.setStyleSheet("background-color: rgb(255, 255, 255);")
-        MainWindow.setWindowTitle("DoctorAche")
+        Dialog.setObjectName("Dialog")
+        Dialog.resize(673, 510)               
+        Dialog.setFont(font)
+        Dialog.setWindowIcon(icon)
+        Dialog.setStyleSheet("background-color: rgb(255, 255, 255);")
 
         font = QtGui.QFont()
         font.setFamily("Arial")
         font.setPointSize(9)
 
-        self.btn_ok = QtWidgets.QPushButton(MainWindow)
+        self.btn_ok = QtWidgets.QPushButton(Dialog)
         self.btn_ok.setGeometry(QtCore.QRect(590, 390, 60, 60))
         self.btn_ok.setFont(font)
         self.btn_ok.setObjectName("btn_ok")
-        self.btn_ok.setText("OK")
         self.btn_ok.clicked.connect(self.button_ok_clicked)
 
-        self.btn_add = QtWidgets.QPushButton(MainWindow)
+        self.btn_add = QtWidgets.QPushButton(Dialog)
         self.btn_add.setGeometry(QtCore.QRect(280, 40, 60, 60))
         self.btn_add.setFont(font)
         self.btn_add.setObjectName("btn_add")
-        self.btn_add.setText("ADD")
         self.btn_add.clicked.connect(self.button_add_clicked)
 
-        self.btn_del = QtWidgets.QPushButton(MainWindow)
+        self.btn_del = QtWidgets.QPushButton(Dialog)
         self.btn_del.setGeometry(QtCore.QRect(350, 390, 60, 60))
         self.btn_del.setFont(font)
         self.btn_del.setObjectName("btn_del")
-        self.btn_del.setText("DEL")
         self.btn_del.clicked.connect(self.button_del_clicked)
 
-        self.cmb_entrada = ExtendedComboBox(MainWindow)
+        self.cmb_entrada = ExtendedComboBox(Dialog)
         self.cmb_entrada.setGeometry(QtCore.QRect(30, 40, 240, 60))
         self.cmb_entrada.setObjectName("cmb_entrada")
         self.cmb_entrada.addItems(doctor.lista_sintomas)
         self.cmb_entrada.setCurrentText("")
 
-        self.list_sintomas = QtWidgets.QListWidget(MainWindow)
+        self.list_sintomas = QtWidgets.QListWidget(Dialog)
         self.list_sintomas.setGeometry(QtCore.QRect(350, 40, 300, 320))
         self.list_sintomas.setObjectName("list_sintomas")
 
-        self.lbl_res = QtWidgets.QLabel(MainWindow)
-        self.lbl_res.setGeometry(QtCore.QRect(30, 200, 240, 60))
-        self.lbl_res.setObjectName("lbl_res")
-        self.lbl_res.setText("")
+        self.retranslateUi(Dialog)
+        QtCore.QMetaObject.connectSlotsByName(Dialog)
 
-        QtCore.QMetaObject.connectSlotsByName(MainWindow)
+    def retranslateUi(self, Dialog):
+        _translate = QtCore.QCoreApplication.translate
+        Dialog.setWindowTitle(_translate("Dialog", "teste"))
+        self.btn_ok.setText(_translate("Dialog", "OK"))
+        self.btn_add.setText(_translate("Dialog", "ADD"))
+        self.btn_del.setText(_translate("Dialog", "DEL"))
 
 
 if __name__ == "__main__":
     doctor = DA()
 
     app = QtWidgets.QApplication(sys.argv)
-    MainWindow = QtWidgets.QMainWindow()
-    ui = Ui_MainWindow()
-    ui.setupUi(MainWindow)
-    MainWindow.show()
+    Dialog = QtWidgets.QDialog()
+    ui = Ui_Dialog()
+    ui.setupUi(Dialog)
+    Dialog.show()
     sys.exit(app.exec_())
