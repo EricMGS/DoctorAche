@@ -4,7 +4,20 @@
 from spellChecker import spellChecker as sc
 import sqlite3
 
-def provaveis(sintomas, lista_sintomas, lista_relacoes):
+def provaveis(sintomas):
+	conn = sqlite3.connect('../database/database')
+	c = conn.cursor()
+
+	lista_sintomas = []
+	c.execute('select nome from sintomas')
+	for linha in c:
+		lista_sintomas.append(linha[0])
+
+	lista_relacoes = []
+	c.execute('select id_doenca, id_sintoma from relacoes')
+	for linha in c:
+		lista_relacoes.append(linha)
+
 	d = {}
 	for i in range(len(sintomas)):
 		sintomas[i] = sc(sintomas[i], lista_sintomas)[0]
@@ -25,31 +38,6 @@ def provaveis(sintomas, lista_sintomas, lista_relacoes):
 		for linha in c:
 			d[i] = linha[0]
 
+	c.close()
+
 	return d
-
-
-
-
-
-
-conn = sqlite3.connect('../database/database')
-c = conn.cursor()
-
-lista_sintomas = []
-c.execute('select nome from sintomas')
-for linha in c:
-	lista_sintomas.append(linha[0])
-
-lista_relacoes = []
-c.execute('select id_doenca, id_sintoma from relacoes')
-for linha in c:
-	lista_relacoes.append(linha)	
-
-
-sintomas = input('Digite os sintomas: ').split(',')
-
-print('As doenças mais prováveis são: ')
-for e in provaveis(sintomas, lista_sintomas, lista_relacoes):
-	print(e)
-
-c.close()
