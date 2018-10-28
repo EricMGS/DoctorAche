@@ -78,61 +78,81 @@ class Ui_MainWindow(object):
 
         self.lbl_res.setText(texto)
 
-
     def setupUi(self, MainWindow):
         icone = QtGui.QIcon()
-        icone.addPixmap(QtGui.QPixmap('Dr.jpg'))
+        icone.addPixmap(QtGui.QPixmap('img/Dr.jpg'))
 
         font = QtGui.QFont()
         font.setFamily("Arial")
         font.setPointSize(10)
 
+        windowPalette = QtGui.QPalette()
+        gradient = QtGui.QLinearGradient(0, 0, 0, 400)
+        gradient.setColorAt(0, QtGui.QColor(199, 216, 198))
+        gradient.setColorAt(1, QtGui.QColor(239, 217, 193))
+        windowPalette.setBrush(QtGui.QPalette.Window, QtGui.QBrush(gradient))
+
+        #styleWindow = "background-color: #E9E9E9;"
+        styleButton = "background-color: #C7D8C6;"
+        styleBoxes = "background-color: #EAD9C1;"
+
         MainWindow.setObjectName("MainWindow")
         MainWindow.resize(673, 510)               
         MainWindow.setFont(font)
         MainWindow.setWindowIcon(icone)
-        MainWindow.setStyleSheet("background-color: rgb(255, 255, 255);")
+        MainWindow.setPalette(windowPalette)
         MainWindow.setWindowTitle("DoctorAche")
 
         font = QtGui.QFont()
-        font.setFamily("Arial")
-        font.setPointSize(9)
+        font.setBold(True)
+        font.setFamily("Calibre")
+        font.setPointSize(12)
 
         self.btn_ok = QtWidgets.QPushButton(MainWindow)
-        self.btn_ok.setGeometry(QtCore.QRect(590, 390, 60, 60))
+        self.btn_ok.setGeometry(QtCore.QRect(590, 390, 30, 30))
         self.btn_ok.setFont(font)
         self.btn_ok.setObjectName("btn_ok")
-        self.btn_ok.setText("OK")
+        self.btn_ok.setText("→")
+        self.btn_ok.setStyleSheet(styleButton)
         self.btn_ok.clicked.connect(self.button_ok_clicked)
 
         self.btn_add = QtWidgets.QPushButton(MainWindow)
-        self.btn_add.setGeometry(QtCore.QRect(280, 40, 60, 60))
+        self.btn_add.setGeometry(QtCore.QRect(600, 40, 30, 30))
         self.btn_add.setFont(font)
         self.btn_add.setObjectName("btn_add")
-        self.btn_add.setText("ADD")
+        self.btn_add.setText("+")
+        self.btn_add.setStyleSheet(styleButton)
         self.btn_add.clicked.connect(self.button_add_clicked)
 
         self.btn_del = QtWidgets.QPushButton(MainWindow)
-        self.btn_del.setGeometry(QtCore.QRect(350, 390, 60, 60))
+        self.btn_del.setGeometry(QtCore.QRect(350, 390, 30, 30))
         self.btn_del.setFont(font)
         self.btn_del.setObjectName("btn_del")
-        self.btn_del.setText("DEL")
+        self.btn_del.setText("-")
+        self.btn_del.setStyleSheet(styleButton)
         self.btn_del.clicked.connect(self.button_del_clicked)
 
         self.cmb_entrada = ExtendedComboBox(MainWindow)
-        self.cmb_entrada.setGeometry(QtCore.QRect(30, 40, 240, 60))
+        self.cmb_entrada.setGeometry(QtCore.QRect(350, 40, 240, 30))
         self.cmb_entrada.setObjectName("cmb_entrada")
         self.cmb_entrada.addItems(doctor.lista_sintomas)
         self.cmb_entrada.setCurrentText("")
+        self.cmb_entrada.setStyleSheet(styleBoxes)
 
         self.list_sintomas = QtWidgets.QListWidget(MainWindow)
-        self.list_sintomas.setGeometry(QtCore.QRect(350, 40, 300, 320))
+        self.list_sintomas.setGeometry(QtCore.QRect(350, 80, 300, 300))
         self.list_sintomas.setObjectName("list_sintomas")
+        self.list_sintomas.setStyleSheet(styleBoxes)
 
         self.lbl_res = QtWidgets.QLabel(MainWindow)
         self.lbl_res.setGeometry(QtCore.QRect(30, 200, 240, 60))
         self.lbl_res.setObjectName("lbl_res")
         self.lbl_res.setText("")
+
+        self.img_dr = QtWidgets.QLabel(MainWindow)
+        self.img_dr.setPixmap(QtGui.QPixmap('img/Dr.jpg'))
+        self.img_dr.setObjectName("img_dr")
+        self.img_dr.setGeometry(100, 250, 200, 200)
 
         QtCore.QMetaObject.connectSlotsByName(MainWindow)
 
