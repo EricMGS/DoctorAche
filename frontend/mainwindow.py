@@ -155,6 +155,12 @@ class Ui_MainWindow(object):
         self.img_dr.setObjectName("img_dr")
         self.img_dr.setGeometry(25, 200, 200, 300)
 
+        self.img_balao = QtWidgets.QLabel(MainWindow)
+        self.img_balao.setPixmap(QtGui.QPixmap('img/balao.png'))
+        self.img_balao.setScaledContents(True)
+        self.img_balao.setObjectName("img_balao")
+        self.img_balao.setGeometry(25, 20, 250, 200)
+
         QtCore.QMetaObject.connectSlotsByName(MainWindow)
 
 
