@@ -7,5 +7,5 @@ Um sistema médico de apoio à decisão que auxilia na identificação da doenç
 - sqlite3
 
 ## Como usar
-Executar o arquivo frontend/main.py
+Executar o arquivo frontend/main.py   
 ** Obs: Não mover ou renomear arquivos **
