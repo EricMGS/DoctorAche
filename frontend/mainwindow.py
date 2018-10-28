@@ -80,7 +80,7 @@ class Ui_MainWindow(object):
 
     def setupUi(self, MainWindow):
         icone = QtGui.QIcon()
-        icone.addPixmap(QtGui.QPixmap('img/Dr.jpg'))
+        icone.addPixmap(QtGui.QPixmap('img/icon.jpg'))
 
         font = QtGui.QFont()
         font.setFamily("Arial")
@@ -150,9 +150,10 @@ class Ui_MainWindow(object):
         self.lbl_res.setText("")
 
         self.img_dr = QtWidgets.QLabel(MainWindow)
-        self.img_dr.setPixmap(QtGui.QPixmap('img/Dr.jpg'))
+        self.img_dr.setPixmap(QtGui.QPixmap('img/nurse.png'))
+        self.img_dr.setScaledContents(True)
         self.img_dr.setObjectName("img_dr")
-        self.img_dr.setGeometry(100, 250, 200, 200)
+        self.img_dr.setGeometry(25, 200, 200, 300)
 
         QtCore.QMetaObject.connectSlotsByName(MainWindow)
 
