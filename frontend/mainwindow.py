@@ -6,7 +6,6 @@ from PyQt5 import QtCore, QtGui, QtWidgets
 from PyQt5.QtCore import Qt, QSortFilterProxyModel
 from PyQt5.QtWidgets import QCompleter, QComboBox
 from DoctorAche import DoctorAche as DA
-from spellChecker import spellChecker as SC
 
 class ExtendedComboBox(QComboBox):
     def __init__(self, parent=None):
@@ -92,10 +91,6 @@ class Ui_MainWindow(object):
         gradient.setColorAt(1, QtGui.QColor(239, 217, 193))
         windowPalette.setBrush(QtGui.QPalette.Window, QtGui.QBrush(gradient))
 
-        #styleWindow = "background-color: #E9E9E9;"
-        styleButton = "background-color: #C7D8C6;"
-        styleBoxes = "background-color: #EAD9C1;"
-
         MainWindow.setObjectName("MainWindow")
         MainWindow.resize(673, 510)    
         MainWindow.setFont(font)
@@ -103,10 +98,26 @@ class Ui_MainWindow(object):
         MainWindow.setPalette(windowPalette)
         MainWindow.setWindowTitle("DoctorAche")
 
+        self.img_dr = QtWidgets.QLabel(MainWindow)
+        self.img_dr.setPixmap(QtGui.QPixmap('img/nurse.png'))
+        self.img_dr.setScaledContents(True)
+        self.img_dr.setObjectName("img_dr")
+        self.img_dr.setGeometry(25, 200, 200, 300)
+
+        self.img_balao = QtWidgets.QLabel(MainWindow)
+        self.img_balao.setPixmap(QtGui.QPixmap('img/balao.png'))
+        self.img_balao.setScaledContents(True)
+        self.img_balao.setObjectName("img_balao")
+        self.img_balao.setGeometry(25, 20, 250, 200)
+
+
         font = QtGui.QFont()
-        #font.setBold(True)
         font.setFamily("Arial")
-        font.setPointSize(12)
+        font.setBold(True)
+        font.setPointSize(10)
+
+        styleButton = "background-color: #C7D8C6;"
+        styleBoxes = "background-color: #EAD9C1;"
 
         self.btn_ok = QtWidgets.QPushButton(MainWindow)
         self.btn_ok.setGeometry(QtCore.QRect(620, 40, 30, 30))
@@ -145,21 +156,10 @@ class Ui_MainWindow(object):
         self.list_sintomas.setStyleSheet(styleBoxes)
 
         self.lbl_res = QtWidgets.QLabel(MainWindow)
-        self.lbl_res.setGeometry(QtCore.QRect(30, 200, 240, 60))
+        self.lbl_res.setGeometry(QtCore.QRect(60, 70, 240, 60))
         self.lbl_res.setObjectName("lbl_res")
-        self.lbl_res.setText("")
-
-        self.img_dr = QtWidgets.QLabel(MainWindow)
-        self.img_dr.setPixmap(QtGui.QPixmap('img/nurse.png'))
-        self.img_dr.setScaledContents(True)
-        self.img_dr.setObjectName("img_dr")
-        self.img_dr.setGeometry(25, 200, 200, 300)
-
-        self.img_balao = QtWidgets.QLabel(MainWindow)
-        self.img_balao.setPixmap(QtGui.QPixmap('img/balao.png'))
-        self.img_balao.setScaledContents(True)
-        self.img_balao.setObjectName("img_balao")
-        self.img_balao.setGeometry(25, 20, 250, 200)
+        self.lbl_res.setFont(font)
+        self.lbl_res.setText("Olá, meu nome é Doutora Dor\nO que você está sentindo?")
 
         QtCore.QMetaObject.connectSlotsByName(MainWindow)
 
