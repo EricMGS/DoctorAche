@@ -1,7 +1,6 @@
 [![License: MIT](https://img.shields.io/badge/License-MIT-green.svg)](https://opensource.org/licenses/MIT)
-:mask:
 
-# DoctorAche
+# DoctorAche :mask:
 Um sistema médico de apoio à decisão que auxilia na identificação da doença de um paciente.
 
 ## Dependências
