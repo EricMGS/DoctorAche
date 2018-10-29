@@ -10,7 +10,7 @@ Um sistema médico de apoio à decisão que auxilia na identificação da doenç
 
 ## Tecnologias usadas  
 ![Python](https://clarissewiki.com/3.0/images/module/Python.png)
-![Sqlite3](https://www.vectorlogo.zone/logos/sqlite/sqlite-card.png)
+![Sqlite3](https://system.data.sqlite.org/images/sqlite128.png)
 ![PyQt5](https://zhoufeng.gallerycdn.vsassets.io/extensions/zhoufeng/pyqt-integration/0.1.5/1528035265197/Microsoft.VisualStudio.Services.Icons.Default)
 ![Git](https://www.benlacy.me/images/skill-logos/git.png)
 
