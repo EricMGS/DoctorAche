@@ -9,7 +9,7 @@ Um sistema médico de apoio à decisão que auxilia na identificação da doenç
 - sqlite3
 
 ## Tecnologias usadas  
-![Python](https://www.python.org/static/opengraph-icon-200x200.png)
+![Python](https://clarissewiki.com/3.0/images/module/Python.png)
 ![Sqlite3](https://www.vectorlogo.zone/logos/sqlite/sqlite-card.png)
 ![PyQt5](https://zhoufeng.gallerycdn.vsassets.io/extensions/zhoufeng/pyqt-integration/0.1.5/1528035265197/Microsoft.VisualStudio.Services.Icons.Default)
 ![Git](https://www.benlacy.me/images/skill-logos/git.png)
