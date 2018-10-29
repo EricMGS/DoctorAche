@@ -1,5 +1,5 @@
 [![License: MIT](https://img.shields.io/badge/License-MIT-green.svg)](https://opensource.org/licenses/MIT)
-:camel: :doctor:
+:mask:
 
 # DoctorAche
 Um sistema médico de apoio à decisão que auxilia na identificação da doença de um paciente.
