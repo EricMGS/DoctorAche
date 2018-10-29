@@ -8,6 +8,9 @@ Um sistema médico de apoio à decisão que auxilia na identificação da doenç
 - PyQt5
 - sqlite3
 
+## Tecnologias usadas  
+
+
 ## Como usar
 Executar o arquivo frontend/main.py   
 **Obs: Não mover ou renomear arquivos**
