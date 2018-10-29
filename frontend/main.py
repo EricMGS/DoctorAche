@@ -65,15 +65,11 @@ class Ui_MainWindow(object):
         doctor.get_sintomas(items)
         doctor.provaveis()
         res = doctor.resultado
-        texto = ("Você provavelmente está com:\n")
         if len(res) == 0:
             texto = 'Nenhum sintoma foi informado'
         else:
-            texto += '1- ' + res[0] + '\n'
-            if len(res) >= 2:
-                texto += '2- ' + res[1] + '\n'
-            if len(res) >= 3:
-                texto += '3- ' + res[2] + '\n'
+            texto = "Você provavelmente está com\n" + res[0]
+            
 
         self.lbl_res.setText(texto)
 
@@ -120,7 +116,7 @@ class Ui_MainWindow(object):
         styleBoxes = "background-color: #EAD9C1;"
 
         self.btn_ok = QtWidgets.QPushButton(MainWindow)
-        self.btn_ok.setGeometry(QtCore.QRect(620, 40, 30, 30))
+        self.btn_ok.setGeometry(QtCore.QRect(620, 70, 30, 30))
         self.btn_ok.setFont(font)
         self.btn_ok.setObjectName("btn_ok")
         self.btn_ok.setText("→")
@@ -128,7 +124,7 @@ class Ui_MainWindow(object):
         self.btn_ok.clicked.connect(self.button_ok_clicked)
 
         self.btn_add = QtWidgets.QPushButton(MainWindow)
-        self.btn_add.setGeometry(QtCore.QRect(550, 40, 30, 30))
+        self.btn_add.setGeometry(QtCore.QRect(550, 70, 30, 30))
         self.btn_add.setFont(font)
         self.btn_add.setObjectName("btn_add")
         self.btn_add.setText("+")
@@ -136,7 +132,7 @@ class Ui_MainWindow(object):
         self.btn_add.clicked.connect(self.button_add_clicked)
 
         self.btn_del = QtWidgets.QPushButton(MainWindow)
-        self.btn_del.setGeometry(QtCore.QRect(585, 40, 30, 30))
+        self.btn_del.setGeometry(QtCore.QRect(585, 70, 30, 30))
         self.btn_del.setFont(font)
         self.btn_del.setObjectName("btn_del")
         self.btn_del.setText("-")
@@ -144,14 +140,14 @@ class Ui_MainWindow(object):
         self.btn_del.clicked.connect(self.button_del_clicked)
 
         self.cmb_entrada = ExtendedComboBox(MainWindow)
-        self.cmb_entrada.setGeometry(QtCore.QRect(300, 40, 240, 30))
+        self.cmb_entrada.setGeometry(QtCore.QRect(300, 70, 240, 30))
         self.cmb_entrada.setObjectName("cmb_entrada")
         self.cmb_entrada.addItems(doctor.lista_sintomas)
         self.cmb_entrada.setCurrentText("")
         self.cmb_entrada.setStyleSheet(styleBoxes)
 
         self.list_sintomas = QtWidgets.QListWidget(MainWindow)
-        self.list_sintomas.setGeometry(QtCore.QRect(300, 80, 350, 300))
+        self.list_sintomas.setGeometry(QtCore.QRect(300, 110, 350, 300))
         self.list_sintomas.setObjectName("list_sintomas")
         self.list_sintomas.setStyleSheet(styleBoxes)
 

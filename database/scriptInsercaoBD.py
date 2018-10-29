@@ -53,12 +53,13 @@ def consultar(nome, lista, limite=10):
 def inserir(nome, lista, tabela):	
 	consultar(nome, lista)
 	resposta = input('\nTem certeza que deseja inserir? (S/N): ')
-	if resposta == 'S':
+	if resposta == 'S' or resposta == 's':
 		c.execute("insert into %s values(null, '%s')" %(tabela, nome))
 		print('Elemento inserido')
 	else:
 		 print('\nCancelado')
-	input('Aperte Enter para continuar...')
+	#input('Aperte Enter para continuar...')
+	conn.commit()
 
 def remover(nome, lista, tabela):
 	consultar(nome, lista)
@@ -183,19 +184,35 @@ while opcao != 'S':
 	elif opcao == '1': #inserir
 		if opcao2 == '0': #doença
 			os.system('clear')
+
 			insercao = input('Digite o nome da doença à inserir (0 para sair): ')
 			while insercao != '0':
+
+				lista_doencas = []
+				c.execute('select nome from doencas')
+				for linha in c:
+					lista_doencas.append(linha[0]) #[0] pois é c é uma lista de tuplas
+
 				inserir(insercao, lista_doencas, 'doencas')
 				os.system('clear')
 				insercao = input('Digite o nome da doença à inserir (0 para sair): ')
+				conn.commit()
 
 		elif opcao2 == '1': #sintoma
 			os.system('clear')
+
 			insercao = input('Digite o nome do sintomas à inserir (0 para sair): ')
 			while insercao != '0':
+
+				lista_doencas = []
+				c.execute('select nome from doencas')
+				for linha in c:
+					lista_doencas.append(linha[0]) #[0] pois é c é uma lista de tuplas
+
 				inserir(insercao, lista_sintomas, 'sintomas')
 				os.system('clear')
 				insercao = input('Digite o nome do sintomas à inserir (0 para sair): ')
+				conn.commit()
 
 		elif opcao2 == '2': #relação
 			os.system('clear')
@@ -205,7 +222,7 @@ while opcao != 'S':
 				inserirRelacao(nome_doenca, nome_sintoma)
 				os.system('clear')
 				nome_doenca = input('Digite o nome da doença (0 para sair): ')
-			
+				conn.commit()
 
 	elif opcao == '2': #remover
 		if opcao2 == '0': #doença
