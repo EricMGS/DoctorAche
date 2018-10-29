@@ -9,7 +9,7 @@ Um sistema médico de apoio à decisão que auxilia na identificação da doenç
 - sqlite3
 
 ## Tecnologias usadas  
-
+![Python](https://www.python.org/static/opengraph-icon-200x200.png)
 
 ## Como usar
 Executar o arquivo frontend/main.py   
