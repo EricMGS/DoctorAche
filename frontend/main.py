@@ -23,6 +23,7 @@ class ExtendedComboBox(QComboBox):
         self.completer = QCompleter(self.pFilterModel, self)
         # always show all (filtered) completions
         self.completer.setCompletionMode(QCompleter.UnfilteredPopupCompletion)
+        self.completer.popup().setStyleSheet("background-color: #EAD9C1;")
         self.setCompleter(self.completer)
 
         # connect signals
