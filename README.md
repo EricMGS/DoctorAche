@@ -21,10 +21,11 @@
 Executar o arquivo frontend/main.py   
 
 ### Adicionar registros
-Adicionar registros no arquivo database/doencas
+Adicionar registros no arquivo database/doencas   
 **OBS MANTER O PADRÃO, CASO CONTRÁRIO O SISTEMA NÃO FUNCIONARÁ**
 
 ### Atualizar base de dados
-Para atualizar o banco de dados executar o arquivo database/update.py
-
+Para atualizar o banco de dados executar o arquivo database/update.py   
+     
+    
 **OBS: NÃO MOVER OU NEM RENOMEAR NENHUM ARQUIVO, CASO CONTRÁRIO O SISTEMA NÃO FUNCIONARÁ**
