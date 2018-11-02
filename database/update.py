@@ -39,7 +39,7 @@ def le_arquivo(arquivo):
 		linha = arquivo.readline() #SINTOMAS
 		linha = arquivo.readline().replace('\n','') #primeiro sintoma
 
-		while '###' not in linha:
+		while '===' not in linha:
 			if linha not in sintomas:
 				sintomas.append(linha)
 				c.execute("insert into sintomas values(null, '%s')" %sintomas[-1])

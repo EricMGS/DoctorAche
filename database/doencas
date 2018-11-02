@@ -1,8 +1,8 @@
-NOME
+#NOME
 Derrame cerebral
-CASOS
+#CASOS
 150000
-SINTOMAS
+#SINTOMAS
 dificuldade para caminhar
 fraqueza de um lado do corpo
 fraqueza muscular
@@ -32,12 +32,12 @@ dificuldade em engolir
 dor de cabeça
 fraqueza de um membro
 movimento rápido involuntário dos olhos
-#####
-NOME
+==========================================
+#NOME
 Alergia a medicamentos
-CASOS
+#CASOS
 150000
-SINTOMAS
+#SINTOMAS
 erupções
 urticária
 inchaço sob a pele
@@ -47,12 +47,12 @@ coceira
 inchaço
 coriza
 olhos marejados
-#####
-NOME
+==========================================
+#NOME
 Alergia alimentar
-CASOS
+#CASOS
 150000
-SINTOMAS
+#SINTOMAS
 erupções
 inchaço
 inchaço sob a pele
@@ -62,12 +62,12 @@ cólica do bebê
 formigamento nos lábios
 inchaço facial
 rubor
-#####
-NOME
+============================================
+#NOME
 Dermatite de contato
-CASOS
+#CASOS
 2000000
-SINTOMAS
+#SINTOMAS
 erupções
 bolha
 descascamento
@@ -80,26 +80,26 @@ vermelhidão
 úlceras
 coceira
 inchaço
-#####
-NOME
+=================================================
+#NOME
 Alergia ao Látex
-CASOS
+#CASOS
 2000000
-SINTOMAS
+#SINTOMAS
 erupções
 vermelhidão
 coceira
 inchaço
 irritação
 garganta
-#####
-NOME
+==================================================
+#NOME
 Asma alérgica
-CASOS
+#CASOS
 2000000
-SINTOMAS
-Tosse crônica
-Tosse seca
+#SINTOMAS
+tosse crônica
+tosse seca
 congestão
 nariz escorrendo
 espirros
@@ -115,15 +115,15 @@ asma
 coceira
 dificuldade em dormir
 irritação na garganta
-#####
-NOME
+==================================================
+#NOME
 Rinite alérgica
-CASOS
+#CASOS
 2000000
-SINTOMAS
-Dor nos ouvidos
-Dor no rosto
-Dor nos seios paranasais
+#SINTOMAS
+dor nos ouvidos
+dor no rosto
+dor nos seios paranasais
 congestão
 nariz escorrendo
 perda de olfato
@@ -143,4 +143,241 @@ dor de cabeça
 fadiga
 irritação na garganta
 tosse
-#####
+=========================================
+#NOME
+Alergia a animais
+#CASOS
+150000
+#SINTOMAS
+congestão
+nariz escorrendo
+espirros
+falta de ar
+respiração sibilante
+olhos inchados
+olhos marejados
+coceira
+irritação na pele
+tosse
+==========================================
+#NOME
+Anafilaxia
+#CASOS
+2000000
+#SINTOMAS
+dor no abdômen
+dor no peito
+dificuldade ao respirar
+falta de ar
+respiração ruidosa
+respiração rápida
+respiração sibilante
+desmaio
+pressão baixa
+rubor
+tontura
+erupções
+inchaço sob a pele
+pele azulada por má circulação
+urticária
+náusea
+vômito
+congestão
+espirros
+espasmo das cordas vocais
+dificuldade na fala
+coceira
+colapso
+confusão mental
+dificuldade em engolir
+inchaço facial
+inchaço na língua
+ritmo cardíaco acelerado
+sentimento de tragédia iminente
+tosse
+==========================================
+#NOME
+Alergia a mofo
+#CASOS
+150000
+#SINTOMAS
+nariz escorrendo
+espirros
+gotejamento pós-nasal
+coceira nos olhos
+olhos inchados
+olhos marejados
+falta de ar
+respiração sibilante
+coceira
+irritação na garganta
+tosse
+========================================
+#NOME
+Alzheimer
+#CASOS
+2000000
+#SINTOMAS
+declínio mental
+dificuldade em pensar
+dificuldade em compreender
+confusão durante a noite
+confusão mental
+delírio
+desorientação
+esquecimento
+invenção de coisas
+dificuldade de concentração
+incapacidade de fazer cálculos simples
+incapacidade de reconhecer coisas comuns
+perda de memória recente
+agitação
+agressão
+irritabilidade
+mudanças de personalidade
+repetição sem sentido das próprias palavras
+dificuldade para exercer funções do dia a dia
+falta de moderação
+vagar sem rumo
+se perder
+apatia
+descontentamento geral
+mudanças de humor
+raiva
+solidão
+alucinação
+depressão
+paranoia
+inquietação
+perda de apetite
+contrações musculares rítmicas
+incapacidade de coordenar movimentos musculares
+fala embaralhada
+incontinência urinária
+sintomas comportamentais
+========================================
+#NOME
+Demência
+#CAS0S
+2000000
+#SINTOMAS
+declínio mental
+confusão mental
+perda de memória
+confusão durante a noite
+desorientação
+incapacidade de falar
+incapacidade de entender
+invenção de coisas
+incapacidade de reconhecer coisas comuns
+agressão
+inquietação
+irritabilidade
+mudanças de personalidade
+falta de moderação
+vagar sem rumo
+se perder
+ansiedade
+apatia
+descontentamento geral
+mudanças de humor
+raiva
+dificuldade em adormecer
+distúrbios do sono
+incapacidade de coordenar movimentos musculares
+instabilidade ao caminhar
+depressão
+paranoia
+dificuldade em engolir
+fala embaralhada
+incontinência fecal
+incontinência urinária ou queda
+=========================================
+#NOME
+Artrite
+#CASOS
+2000000
+#SINTOMAS
+dor nas mãos
+dor nas articulações
+dor aguda
+dor intermitente
+Dor ao sentar
+inchaço nas articulações
+rigidez nas articulações
+sensibilidade nas articulações
+inchaço no dedos
+inchaço na saliência óssea
+deformidade física
+redução da amplitude de movimento
+vermelhidão
+==========================================
+#NOME
+Espondilite anquilosante
+#CASOS
+150000
+#SINTOMAS
+Dor na parte inferior das costas
+dor no calcanhar
+dor nas costas
+dor nas articulações
+dor nos olhos
+dor no pescoço
+dor no quadril
+dor em repouso
+dor artrítica
+disfunção da articulação das costas
+rigidez nas articulações
+sensibilidade nas articulações
+inflamação da camada média do olho
+vermelhidão no olho
+costas encurvadas
+deformidade física
+doença inflamatória intestinal
+fadiga
+formação de tecido ósseo
+tendões inflamados
+visão embaçada
+============================================
+#NOME
+
+#CASOS
+
+#SINTOMAS
+
+============================================
+#NOME
+
+#CASOS
+
+#SINTOMAS
+
+============================================
+#NOME
+
+#CASOS
+
+#SINTOMAS
+
+============================================
+#NOME
+
+#CASOS
+
+#SINTOMAS
+
+============================================
+#NOME
+
+#CASOS
+
+#SINTOMAS
+
+============================================
+#NOME
+
+#CASOS
+
+#SINTOMAS
+
+============================================
