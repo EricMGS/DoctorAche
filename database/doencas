@@ -1,5 +1,7 @@
 NOME
 Derrame cerebral
+CASOS
+150000
 SINTOMAS
 dificuldade para caminhar
 fraqueza de um lado do corpo
@@ -26,16 +28,15 @@ confusão mental
 incapacidade de falar
 incapacidade de entender
 dormência
-fraqueza muscular
 dificuldade em engolir
 dor de cabeça
 fraqueza de um membro
 movimento rápido involuntário dos olhos
-CASOS
-150000
 #####
 NOME
 Alergia a medicamentos
+CASOS
+150000
 SINTOMAS
 erupções
 urticária
@@ -46,11 +47,11 @@ coceira
 inchaço
 coriza
 olhos marejados
-CASOS
-150000
 #####
 NOME
 Alergia alimentar
+CASOS
+150000
 SINTOMAS
 erupções
 inchaço
@@ -61,5 +62,4 @@ cólica do bebê
 formigamento nos lábios
 inchaço facial
 rubor
-CASOS
-150000
+#####
