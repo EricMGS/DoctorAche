@@ -17,15 +17,15 @@
 ![GitHub](https://saviorisdead.gallerycdn.vsassets.io/extensions/saviorisdead/theme-githubcleanwhite/0.0.3/1474455535166/Microsoft.VisualStudio.Services.Icons.Default)
 
 ## Como usar
+**OBS: NÃO MOVER OU NEM RENOMEAR NENHUM ARQUIVO, CASO CONTRÁRIO O SISTEMA NÃO FUNCIONARÁ**
 ### Executar programa
 Executar o arquivo frontend/main.py   
 
 ### Adicionar registros
 Adicionar registros no arquivo database/doencas   
-**OBS MANTER O PADRÃO, CASO CONTRÁRIO O SISTEMA NÃO FUNCIONARÁ**
+**OBS: MANTER O PADRÃO, CASO CONTRÁRIO O SISTEMA NÃO FUNCIONARÁ**
 
 ### Atualizar base de dados
 Para atualizar o banco de dados executar o arquivo database/update.py   
      
-    
-**OBS: NÃO MOVER OU NEM RENOMEAR NENHUM ARQUIVO, CASO CONTRÁRIO O SISTEMA NÃO FUNCIONARÁ**
+  
