@@ -69,8 +69,11 @@ class Ui_MainWindow(object):
         if len(res) == 0:
             texto = 'Nenhum sintoma foi informado'
         else:
-            texto = "Você provavelmente está com\n" + res[0]
-            
+            texto = str(round(res[0][1], 2)) + '% ' + res[0][0]
+            if len(res) >= 2:
+                texto += '\n' + str(round(res[1][1], 2)) + '% ' + res[1][0]
+            if len(res) >= 3:
+                texto += '\n' + str(round(res[2][1], 2)) + '% ' + res[2][0]
 
         self.lbl_res.setText(texto)
 
