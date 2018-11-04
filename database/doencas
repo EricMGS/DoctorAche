@@ -1377,7 +1377,7 @@ tosse crônica
 ========================================================
 #NOME
 AIDS
-#CASOS
+#CASOScefal
 150000
 #SINTOMAS
 dor no abdômen
@@ -1545,3 +1545,287 @@ costas encurvadas
 fratura óssea
 perda de altura
 ============================================
+#NOME
+Angina
+#CASOS
+2000000
+#SINTOMAS
+ansiedade
+pressão no peito
+ritmo cardíaco acelerado
+falta de ar
+respiração rápida
+indigestão
+náusea
+fadiga
+incapacidade de praticar atividade física
+tontura
+suor
+dor no peito
+dor no braço
+dor no maxilar
+dor no pescoço
+=============================================
+#NOME
+Cefaleia em salvas
+#CASOS
+150000
+#SINTOMAS
+olhos marejados
+pupilas pequenas
+queda da pálpebra superior
+olhos inchados
+vermelhidão no olhos
+disfunção do sistema nervoso
+suor
+dor de cabeça
+agitação
+coriza
+==========================================
+#NOME
+Cefaleia de tensão
+#CASOS
+2000000
+#SINTOMAS
+dores nos músculos
+dores no pescoço
+dores no rosto
+dores nos seios paranasais
+dor de cabeça
+ansiedade
+dificuldade em adormecer
+espasmos musculares
+medo de sons altos
+sensibilidade à luz
+====================================
+#NOME
+Enxaqueca
+#CASOS
+2000000
+#SINTOMAS
+dor nos olhos
+dor no pescoço
+dor no rosto
+dor na testa
+perda de visão periférica
+visualização de pontos
+visão distorcida
+visão embaçada
+fadiga
+mal-estar
+tontura
+vertigem
+formigamento
+sensibilidade à luz
+náusea
+vômito
+ansiedade
+irritabilidade
+pressão na cabeça
+sensibilidade muscular
+====================================
+#NOME
+Alopécia androgênica
+#CASOS
+2000000
+#SINTOMAS
+queda de cabelo
+==================================
+#NOME
+Alopecia areata
+#CASOS
+150000
+#SINTOMAS
+queda de cabelo
+ansiedade
+coceira nas unhas
+pequenas depressões nas unhas
+===================================
+#NOME
+Eflúvio telógeno
+#CASOS
+150000
+#SINTOMAS
+queda de cabelo
+ansiedade
+=============================
+#NOME
+Impotência sexual
+#CASOS
+2000000
+#SINTOMAS
+disfunção sexual
+desejo sexual reduzido
+ansiedade
+dificuldade em conseguir uma ereção
+dificuldade em manter uma ereção
+ereção fraca
+====================================
+#NOME
+Osteoporose
+#CASOS
+2000000
+#SINTOMAS
+dores nas costas
+costas encurvadas
+fratura óssea
+perda de altura
+========================================
+#NOME
+Câncer de ovário
+#CASOS
+150000
+#SINTOMAS
+dor no abdômen
+dor na pélvis
+inchaço
+indigestão
+mudança nos hábitos intestinais
+náusea
+líquido no abdômen
+nódulo no abdômen
+plenitude abdominal
+fadiga
+perda de apetite
+perda de peso
+perda de peso extrema
+=========================================
+#NOME
+Variz
+#CASOS
+2000000
+#SINTOMAS
+dor nas pernas
+vasos sanguíneos inchados na pele
+descoloração na pele
+escurecimento da pele
+úlceras
+inchaço
+coceira nas pernas
+pernas inchadas
+pernas pesadas
+sensação de formigamento nas pernas
+===========================================
+#NOME
+Candidíase vaginal
+#CASOS
+2000000
+#SINTOMAS
+dores na vagina
+dores durante a relação sexual
+prurido vaginal
+corrimento vaginal
+inflamação na vulva
+inflamação vaginal
+vermelhidão na vulva
+=======================================
+#NOME
+Cisto de ovário
+#CASOS
+2000000
+#SINTOMAS
+dores nas costas
+dores na parte inferior do abdômen
+dores na parte lateral do corpo
+dores na pélvis
+dores na vagina
+dores durante a relação sexual
+menstruação anormal
+menstruação dolorosa
+menstruação irregular
+sangramento pela vagina
+cólicas
+quantidades excessivas de gases
+=======================================
+Síndrome pré-menstrual
+#CASOS
+2000000
+#SINTOMAS
+dores na mama
+dores nos músculos
+dores na pélvis
+alterações do apetite
+fadiga
+fome excessiva
+perda de apetite
+constipação
+retenção de líquido
+quantidades excessivas de gases
+desesperança
+ansiedade
+descontentamento geral do humor
+inchaço
+acne
+alteração de humor
+depressão
+dor de cabeça
+falta de concentração
+ganho de peso
+insônia
+irritabilidade
+==========================================
+#NOME
+Aborto espontâneo
+#CASOS
+2000000
+#SINTOMAS
+dores no abdômen
+dores na parte inferior das costas
+dores na pélvis
+dores na vagina
+sangramento vaginal
+contração uterina
+==============================================
+#NOME
+Glaucoma
+#CASOS
+150000
+#SINTOMAS
+dor nos olhos
+enxergar halos ao redor das luzes
+perda de visão
+visão distorcida
+visão embaçada
+náusea
+vômito
+dor de cabeça
+vermelhidão nos olhos
+===========================================
+#NOME
+Catarata
+#CASOS
+2000000
+#SINTOMAS
+enxergar halos ao redor das luzes
+incapacidade de enxergar com pouca luz
+perda de visão
+perda parcial da visão
+sensibilidade à luz
+visão dupla
+visão embaçada
+============================================
+#NOME
+Degeneração macular
+#CASOS
+2000000
+#SINTOMAS
+anormalidade onde linhas retas parecem onduladas
+incapacidade de enxergar com pouca luz
+perda de visão
+perda parcial da visão
+visualização de pontos
+visão distorcida
+visão embaçada
+ressecamento dos olhos
+===============================================
+#NOME
+Surdez
+#CASOS
+150000
+#SINTOMAS
+problema de audição
+atraso de fala
+isolamento social
+sensibilidade ao som
+zumbido nos ouvidos
+===========================================
