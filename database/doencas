@@ -2044,7 +2044,6 @@ Nódulo de tireoide
 caroço no pescoço
 tireóide aumentada
 ===========================================
-============================================
 #NOME
 Cistite intersticial
 #CASOS
@@ -2142,4 +2141,642 @@ sangue na urina
 infecção recorrente
 irritação vaginal
 sensibilidade
+==============================================
+#NOME
+Transtorno bipolar
+#CASOS
+2000000
+#SINTOMAS
+ansiedade
+apatia
+apreensão
+culpa
+descontentamento geral
+desesperança
+euforia
+mudanças de humor
+perda de interesse
+raiva
+tristeza
+entusiasmo
+agitação
+agressão
+automutilação
+choro
+comportamentos de risco
+excesso de desejo sexual
+hiperatividade
+impulsividade
+irritabilidade
+delírio
+falta de concentração
+lentidão durante atividades
+pensamento acelerado
+pensamentos indesejados
+falsa superioridade
+depressão
+depressão agitada
+episódio maníaco
+paranoia
+dificuldade em adormecer
+excesso de sonolência
+fadiga
+inquietação
+ganho de peso
+perda de peso
+==================================
+#NOME
+Depressão
+#CASOS
+2000000
+#SINTOMAS
+ansiedade
+apatia
+culpa
+descontentamento geral
+desesperança
+mudanças de humor
+perda de interesse
+perda de prazer nas atividades
+solidão
+tristeza
+tédio
+sofrimento emocional
+agitação
+automutilação
+choro excessivo
+irritabilidade
+isolamento social
+despertar precoce
+excesso de sonolência
+insônia
+sono agitado
+fadiga
+fome excessiva
+inquietação
+falta de concentração
+lentidão durante atividades
+pensamentos suicidas
+depressão
+repetição insistente de pensamentos
+ganho de peso
+perda de peso
+abuso de substâncias
+falta de apetite
+==================================
+#NOME
+Distimia
+#CASOS
+2000000
+#SINTOMAS
+tristeza
+culpa
+descontentamento geral
+desesperança
+perda de interesse
+raiva
+fadiga
+fome excessiva
+perda de apetite
+excesso de sonolência
+insônia
+falta de concentração
+lentidão durante atividades
+baixa autoestima
+indecisão
+irritabilidade
+==================================
+#NOME
+Transtorno do panico
+#CASOS
+20000000
+#SINTOMAS
+palpitações
+aceleração cardíacas
+sudorese
+tremores
+estremecimentos
+sensações de falta de ar
+sentimentos de bloqueio
+dor no peito
+desconforto
+náuseas
+desconforto abdominal
+tontura
+desmaio
+==================================
+#NOME
+Transtorno de estresse pós-traumático
+#CASOS
+2000000
+#SINTOMAS
+ataque de pânico
+culpa
+descontentamento geral
+desesperança
+nervosismo
+perda de interesse
+perda de prazer nas atividades
+raiva
+solidão
+sofrimento emocional
+agitação
+agressão
+automutilação
+comportamento autodestrutivo
+gritos
+hipervigilância
+hostilidade
+irritabilidade
+isolamento social
+alucinação
+ansiedade severa
+depressão
+flashback
+medo
+desconfiança
+insônia
+pesadelos
+privação de sono
+terror noturno
+estresse agudo
+perda de consciência
+pensamentos indesejados
+pensamentos suicidas
+desapego emocional
+dor de cabeça
+falta de resposta emocional
+==================================
+#NOME
+Transtorno afetivo sazonal
+#CASOS
+2000000
+#SINTOMAS
+ansiedade
+apatia
+descontentamento geral
+desesperança
+mudanças de humor
+perda de interesse
+perda prazer nas atividades
+raiva
+solidão
+tristeza
+excesso de sonolência
+insônia
+privação de sono
+alterações do apetite
+fadiga
+inquietação
+choro
+irritabilidade
+isolamento social
+depressão
+repetição insistente de pensamentos
+ganho de peso
+perda de peso
+falta de concentração
+==================================
+#NOME
+Conjuntivite
+#CASOS
+2000000
+#SINTOMAS
+dor nos olhos
+vermelhidão nos olhos
+vermelhidão da pálpebra
+coceira
+inchaço da conjuntiva
+irritação dos olhos
+olhos inchados
+olhos marejados
+secreção dos olhos
+secura dos olhos
+congestão
+nariz escorrendo
+espirros
+dor de garganta
+sensação de queimação na garganta
+sensibilidade à luz
+==================================
+#NOME
+Descolamento de retina
+#CASOS
+150000
+#SINTOMAS
+incapacidade de enxergar com pouca luz
+miopia
+perda de visão
+perda de visão periférica
+perda parcial da visão
+perda temporária da visão em um olho
+sensibilidade à luz
+visualização de flashes luminosos
+visualização de pontos
+visão embaçada
+pupila dilatada
+sangramento
+==================================
+#NOME
+Síndrome de Sjogren
+#CASOS
+150000
+#SINTOMAS
+dor nas articulações
+dor nos músculos
+dor artrítica
+anormalidade no paladar
+perda do paladar
+secura na boca
+cáries dentárias
+dificuldade em engolir
+fadiga
+pele seca
+rigidez das articulações
+sapinho
+secura vaginal
+síndrome do olho seco
+tosse seca
+vasculite cutânea de pequenos vasos
+==================================
+#NOME
+Transtorno de hiperatividade
+#CASOS
+2000000
+#SINTOMAS
+agressão
+excitabilidade
+hiperatividade
+impulsividade
+inquietação
+irritabilidade
+falta de moderação
+dificuldade de concentração
+esquecimento
+falta de atenção
+ansiedade
+excitação
+raiva
+depressão
+dificuldade de aprendizagem
+==================================
+#NOME
+Enurese
+#CASOS
+150000
+#SINTOMAS
+dores ao urinar
+sede anormal
+urina avermelhada
+fezes duras
+ronco
+micção involuntário durante o sono
+==================================
+#NOME
+Catapora
+#CASOS
+150000
+#SINTOMAS
+fadiga
+febre
+mal-estar
+perda de apetite
+bolha na pele
+manchas vermelhas na pele
+sarna
+úlceras na pele
+coceira
+dor de garganta
+pus na garganta
+==================================
+#NOME
+Cólica no bebe
+#CASOS
+2000000
+#SINTOMAS
+barriga endurecida
+crise de choro
+soltar gases durante a crise de choro
+==================================
+#NOME
+Assadura
+#CASOS
+2000000
+#SINTOMAS
+erupções na pele
+descascamento na pele
+coceira ao redor do ânus
+==================================
+#NOME
+Sarampo
+#CASOS
+15000
+#SINTOMAS
+dor nos músculos
+tosse forte
+tosse seca
+fadiga
+febre
+mal-estar
+perda de apetite
+nariz escorrendo
+vermelhidão no nariz
+espirros
+erupções na pele
+manchas vermelhas na pele
+conjuntivite
+dor de cabeça
+dor de garganta
+inchaço dos gânglios
+irritação nos olhos
+sensibilidade à luz
+==================================
+#NOME
+Caxumba
+#CASOS
+150000
+#SINTOMAS
+dor no pescoço
+dor no testículo
+fadiga
+febre
+mal-estar
+perda de apetite
+dificuldade em engolir
+dor de cabeça
+inchaço das glândulas salivares
+inchaço dos gânglios
+==================================
+#NOME
+Jet lag
+#CASOS
+150000
+#SINTOMAS
+diarreia
+indigestão
+náusea
+insônia
+sonolência diurna excessiva
+fadiga
+mal-estar
+dor de cabeça
+falta de concentração
+irritabilidade
+==================================
+#NOME
+Narcolepsia
+#CASOS
+150000
+#SINTOMAS
+sonolência diurna
+insônia
+pesadelos
+fraqueza muscular
+paralisia muscular
+perda de controle muscular
+alucinação
+colapso físico em estado consciente
+compulsão alimentar
+fadiga
+queda
+==================================
+#NOME
+Apneia do sono
+#CASOS
+2000000
+#SINTOMAS
+insônia
+pesadelos
+privação de sono
+ronco
+sonolência diurna excessiva
+episódios de apneia
+padrão de respiração anormal
+respiração pela boca
+respiração ruidosa
+respiração superficial
+alterações de humor
+boca seca
+depressão
+disfunção sexual
+dor de cabeça
+fadiga
+ganho de peso
+garganta seca
+irritabilidade
+ranger dos dentes
+==================================
+#NOME
+Acne
+#CASOS
+2000000
+#SINTOMAS
+erupções na pele
+inchaço na pele
+escurecimento da pele devido a inflamação
+furúnculos
+manchas vermelhas na pele
+sensibilidade na pele
+vermelhidão na pele
+espinha
+cravo
+==================================
+#NOME
+Queratosa actínica
+#CASOS
+2000000
+#SINTOMAS
+manchas escamosas na pele
+coceira
+==================================
+#NOME
+Dermatite de contato
+#CASOS
+2000000
+#SINTOMAS
+dor na pele
+erupções na pele
+bolha na pele
+descascamento da pele
+erupções cutâneas que se parecem com acne
+escurecimento da pele
+fissuras na pele
+pele seca
+urticária
+vermelhidão na pele
+coceira
+inchaço
+==================================
+#NOME
+Furunculo
+#CASOS
+150000
+#SINTOMAS
+espinhas
+vermelhidão na pele
+coceira
+inchaço
+sensibilidade
+==================================
+#NOME
+Queimadura
+#CASOS
+2000000
+#SINTOMAS
+bolha na pele
+descascamento da pele
+perda total da cor da pele
+rubor na pele
+inchaço
+sensibilidade
+==================================
+#NOME
+Caspa
+#CASOS
+2000000
+#SINTOMAS
+flocos de pele em seu couro cabeludo
+crostas de pele que descamam
+pele avermelhada
+descamação das pálpebras
+coceira
+ardor
+oleosidade na pele
+oleosidade no couro cabeludo
+==================================
+#NOME
+Urticária
+#CASOS
+2000000
+#SINTOMAS
+área elevada da pele
+inflamação em resposta ao toque
+inchaço
+coceira
+inchaço facial
+rubor
+sensação de queimação
+==================================
+#NOME
+Queloide
+#CASOS
+2000000
+#SINTOMAS
+escurecimento da pele
+nódulos na pele
+==================================
+#NOME
+Micose
+#CASOS
+150000
+#SINTOMAS
+descascamento da pele
+erupções na pele
+escurecimento da pele
+pequena saliência na pele
+perda de cor da pele
+coceira
+corrimento vaginal
+==================================
+#NOME
+Psoríase
+#CASOS
+2000000
+#SINTOMAS
+dor nas costas
+dor nas articulações
+descamação na pele
+descascamento da pele
+ferroada
+irritação
+manchas na pele
+pequena saliência na pele
+pele seca
+vermelhidão na pele
+rigidez nas articulações
+sensibilidade nas articulações
+lesão
+coceira
+dedos das mãos inflamados
+depressão
+fadiga
+manchas avermelhadas sob as unhas ocasionadas por sangramento
+pequenas depressões nas unhas
+tendões inflamados
+desprendimento da unha do leito ungueal
+=====================================
+#NOME
+Dermatite atópica
+#CASOS
+2000000
+#SINTOMAS
+erupções na pele
+descascamento da pele
+fissuras na pele
+inchaço na pele
+pele seca
+vermelhidão na pele
+coceira
+=====================================
+#NOME
+Rosácea
+#CASOS
+2000000
+#SINTOMAS
+acne
+erupções cutâneas que se parecem com acne
+inchaço
+manchas vermelhas na pele
+pele oleosa
+vasos sanguíneos inchados na pele
+espinhas
+olhos inchados
+coceira
+nariz vermelho grande e bulboso
+rosto avermelhado
+sensação de ardor no rosto
+=====================================
+#NOME
+Esclerodermia
+#CASOS
+150000
+#SINTOMAS
+dor nas articulações
+azia
+refluxo ácido
+vasos sanguíneos inchados na pele
+dedos rígidos
+dificuldade em engolir
+fadiga
+falta de ar
+fenômeno de raynaud
+inchaço
+rigidez das articulações
+sensibilidade ao frio
+tosse crônica
+==========================================
+#NOME
+Cobreiro
+#CASOS
+2000000
+#SINTOMAS
+dor na pele
+bolhas na pele
+erupções cutâneas na face
+vermelhidão na pele
+excesso de sensibilidade na pele
+coceira
+mal-estar
+sensação de queimação na pele
+==============================================
+#NOME
+Verrugas
+#CASOS
+2000000
+#SINTOMAS
+erupções na pele
+pequena saliência na pele
+pequenos crescimentos na pele
+coceira
+ínguas semelhantes a verrugas nos genitais
 ==============================================
