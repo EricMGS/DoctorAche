@@ -1409,4 +1409,80 @@ inchaço dos gânglios
 infecção oportunista
 pneumonia
 sapinho
-=================================================
+============================================================
+#NOME
+Anorexia
+#CASOS
+150000
+#SINTOMAS
+baixa temperatura corporal
+desidratação
+desmaio
+fadiga
+osteoporose
+pressão baixa
+tontura
+distúrbios do equilíbrio hidroeletrolítico
+comportamento compulsivo
+compulsão alimentar
+hiperatividade
+impulsividade
+isolamento social
+ansiedade
+apreensão
+culpa
+abaixo do peso
+perda de peso
+extrema perda de peso
+magreza
+crescimento lento
+puberdade atrasada
+menstruação irregular
+ausência de menstruação
+constipação
+vômito
+depressão
+medo
+cabelo ressecado
+dor de cabeça
+fazer dieta
+lesões
+pele seca
+ritmo cardíaco lento
+sensibilidade ao frio
+unhas quebradiças
+uso abusivo de laxantes
+==================================================================
+#NOME
+Celulite
+#CASOS
+2000000
+#SINTOMAS
+excesso de peso
+gordura localizada
+==================================================================
+#NOME
+Obesidade infantil
+#CASOS
+2000000
+#SINTOMAS
+excesso de peso
+barriga grande
+compulsão alimentar
+falta de ar
+vida sedentária
+==================================================================
+#NOME
+Obesidade
+#CASOS
+2000000
+#SINTOMAS
+Dores nas costas
+Dores nas articulações
+excesso de peso
+ganho de peso
+barriga grande
+compulsão alimentar
+fadiga
+ronco
+==================================================================
