@@ -44,7 +44,7 @@ def le_arquivo(arquivo):
 				sintomas.append(linha)
 				c.execute("insert into sintomas values(null, '%s')" %sintomas[-1])
 
-				inserirRelacao(doencas[-1][0], sintomas[-1])
+			inserirRelacao(doencas[-1][0], sintomas[-1])
 
 			linha = arquivo.readline().replace('\n','') #próximos sintomas
 		
