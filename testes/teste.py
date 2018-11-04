@@ -51,7 +51,7 @@ class Teste:
 			for combinacao in self.comb:
 				self.res = self.resultado(list(combinacao))
 				self.res = [e[0] for e in self.res]
-				if subLista[0] in self.res:
+				if subLista[0] in self.res[:3]:
 					self.certas += 1
 				else:
 					self.erros += 1
