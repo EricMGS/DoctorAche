@@ -79,7 +79,7 @@ class Ui_MainWindow(object):
 
     def setupUi(self, MainWindow):
         icone = QtGui.QIcon()
-        icone.addPixmap(QtGui.QPixmap('img/icon.jpg'))
+        icone.addPixmap(QtGui.QPixmap('img/icon.png'))
 
         font = QtGui.QFont()
         font.setFamily("Arial")
@@ -92,7 +92,7 @@ class Ui_MainWindow(object):
         windowPalette.setBrush(QtGui.QPalette.Window, QtGui.QBrush(gradient))
 
         MainWindow.setObjectName("MainWindow")
-        MainWindow.resize(673, 510)    
+        MainWindow.setFixedSize(673, 510)    
         MainWindow.setFont(font)
         MainWindow.setWindowIcon(icone)
         MainWindow.setPalette(windowPalette)
@@ -160,6 +160,12 @@ class Ui_MainWindow(object):
         self.lbl_res.setObjectName("lbl_res")
         self.lbl_res.setFont(font)
         self.lbl_res.setText("Olá, meu nome é Doutora Dor\nO que você está sentindo?")
+
+        self.lbl_aviso = QtWidgets.QLabel(MainWindow)
+        self.lbl_aviso.setGeometry(QtCore.QRect(400, 450, 300, 50))
+        self.lbl_aviso.setObjectName("lbl_aviso")
+        self.lbl_aviso.setFont(font)
+        self.lbl_aviso.setText("Consulte um médico para orientação")
 
         QtCore.QMetaObject.connectSlotsByName(MainWindow)
 
