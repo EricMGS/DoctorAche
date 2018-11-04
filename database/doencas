@@ -840,3 +840,64 @@ formigamento
 sensibilidade à dor
 espasmos musculares
 ===================================================
+#NOME
+Gripe
+#CASOS
+2000000
+#SINTOMAS
+Dores locais: nas articulações
+tosse com catarro
+tosse seca
+tosse forte
+tosse leve
+calafrios
+desidratação
+fadiga
+febre
+mal-estar
+ṕerda de apetite
+rubor
+dor no corpo
+suor
+congestão no nariz
+nariz escorrendo
+espirros
+dor na garganta
+irritação na garganta
+dor de cabeça
+falta de ar
+fraqueza muscular
+inchaço dos gânglios
+náusea
+pressão no peito
+=================================================
+#NOME
+Encefalite
+#CASOS
+150000
+#SINTOMAS
+dor nos músculos
+fadiga
+febre
+mal-estar
+perda de apetite
+contrações musculares rítmicas
+fraqueza muscular
+problemas de coordenação
+marcha instável
+confusão mental
+desorientação
+nível alterado de consciência
+náusea
+vômito
+alucinação
+delírio
+convulsões
+diminuição na sensação de tato
+dor de cabeça
+irritabilidade
+sensibilidade à luz
+dor de cabeça
+pescoço rígido
+dificuldade na fala
+=================================================
