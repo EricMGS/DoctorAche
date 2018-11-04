@@ -46,7 +46,6 @@ class DoctorAche():
 					self.contagem[relacao[0]] += 1
 				else:
 					self.contagem.update({relacao[0] : 1})
-		print(self.contagem)
 
 		#Conta o total de relações que cada doença retornada acima possui e calcula a probabilidade
 		for d in list(self.contagem):
