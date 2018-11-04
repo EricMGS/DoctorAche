@@ -1409,7 +1409,7 @@ inchaço dos gânglios
 infecção oportunista
 pneumonia
 sapinho
-============================================================
+========================================
 #NOME
 Anorexia
 #CASOS
@@ -1477,8 +1477,8 @@ Obesidade
 #CASOS
 2000000
 #SINTOMAS
-Dores nas costas
-Dores nas articulações
+dores nas costas
+dores nas articulações
 excesso de peso
 ganho de peso
 barriga grande
@@ -1486,27 +1486,3 @@ compulsão alimentar
 fadiga
 ronco
 ==================================================================
-#NOME
-pressão alta
-#CASOS
-2000000
-#SINTOMAS
-Enjoo
-Dor de cabeça
-Dor na nuca
-Sonolência
-Zumbido no ouvido
-Pequenos pontos de sangue nos olhos
-Visão dupla ou embaçada
-Dificuldade para respirar
-Palpitações cardíacas
-========================================================
-#NOME
-hipertensão pulmonar
-#CASOS
-150000
-#SINTOMAS
-Falta de ar
-tonturas
-pressão no peito
-========================================================
