@@ -34,7 +34,6 @@ class DoctorAche():
 	def provaveis(self):
 		#Obtêm o id dos sintomas
 		for i in range(len(self.sintomas)):
-			self.sintomas[i] = sc(self.sintomas[i], self.lista_sintomas)[0]
 			self.cursor.execute("select id from sintomas where nome='%s'" %self.sintomas[i])
 			for linha in self.cursor:
 				self.sintomas[i] = linha[0]
@@ -47,6 +46,7 @@ class DoctorAche():
 					self.contagem[relacao[0]] += 1
 				else:
 					self.contagem.update({relacao[0] : 1})
+		print(self.contagem)
 
 		#Conta o total de relações que cada doença retornada acima possui e calcula a probabilidade
 		for d in list(self.contagem):
