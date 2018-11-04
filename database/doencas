@@ -1829,3 +1829,218 @@ isolamento social
 sensibilidade ao som
 zumbido nos ouvidos
 ===========================================
+#NOME
+Pressão alta
+#CASOS
+2000000
+#SINTOMAS
+enjoo
+dor de cabeça
+dor na nuca
+sonolência
+zumbido no ouvido
+pequenos pontos de sangue nos olhos
+visão dupla
+visão embaçada
+Dificuldade para respirar
+Palpitações cardíacas
+===========================================
+#NOME
+Botulismo
+#CASOS
+15000
+#SINTOMAS
+dor no abdômen
+disfunção do sistema nervoso
+fadiga
+sensação de desmaio
+tontura
+constipação
+náusea
+vômito
+músculos flácidos
+paralisia com músculos fracos
+baba 
+secura
+visão dupla
+visão embaçada
+músculos oculares fracos
+pupila dilatada
+dificuldade em engolir
+dificuldade em falar
+dor de cabeça
+falta de ar
+reflexos lentos
+retenção urinária
+===========================================
+#NOME
+Dengue
+#CASOS
+150000
+#SINTOMAS
+dor nos músculos
+dor atrás dos olhos
+dor nas costas
+dor no abdômen
+dor nos ossos
+========================================================
+#NOME
+Transtorno de ansiedade
+#CASOS
+2000000
+#SINTOMAS
+fadiga
+inquietação
+suor
+falta de concentração
+pensamento acelerado
+pensamentos indesejados
+insônia
+pesadelos
+hipervigilância
+irritabilidade
+ansiedade
+ataque de pânico
+falta de ar
+respiração rápida
+preocupação excessiva
+boca seca
+medo
+náusea
+palpitações
+sentimento de tragédia iminente
+tremedeira
+========================================================
+#NOME
+Transtorno dismórfico corporal
+#CASOS
+150000
+#SINTOMAS
+ansiedade
+descontentamento geral
+pensamentos indesejados
+comportamento compulsivo
+depressão
+higiene excessiva
+============================================
+#NOME
+Depressão pós-parto
+#CASOS
+2000000
+#SINTOMAS
+ansiedade
+ataque de pânico
+culpa
+descontentamento geral
+desesperança
+mudanças de humor
+perda de interesse
+perda de interesse
+perda de prazer nas atividades
+raiva
+solidão
+tristeza
+insônia
+pesadelos
+privação de sono
+fadiga
+inquietação
+perda de apetite
+choro
+irritabilidade
+isolamento social
+falta de concentração
+pensamentos indesejados
+transtorno de pensamento
+depressão
+medo
+repetição insistente de pensamentos
+ganho de peso
+perda de peso
+=====================================================
+#NOME
+Transtorno de ansiedade de separação
+#CASOS
+150000
+#SINTOMAS
+ansiedade
+apreensão
+ataque de pânico
+tristeza
+depressão
+medo
+choro
+palpitações
+pesadelos
+respiração acelerada
+========================================
+#NOME
+Tireoidite de Hashimoto
+#CASOS
+150000
+#SINTOMAS
+pele rugosidade
+pele secura
+queda de cabelo
+cabelos secos
+constipação
+depressão
+fadiga
+fraqueza muscular
+ganho de peso
+inchaço nas extremidades
+menstruação intensa ou prolongada
+olhos inchados
+rigidez das articulações
+ritmo cardíaco lento
+sensibilidade ao frio
+tireóide aumentada
+=======================================
+#NOME
+Hipertiroidismo
+#CASOS
+150000
+#SINTOMAS
+fadiga
+fome excessiva
+intolerância ao calor
+sudorese excessiva
+palpitações
+ritmo anormal do coração
+ritmo cardíaco acelerado
+dificuldade em adormecer
+insônia
+menstruação curta
+menstruação irregular
+hiperatividade
+irritabilidade
+mudanças de humor
+nervosismo
+protusão anormal dos olhos
+olhos inchados
+diarreia
+ejaculação precoce
+fraqueza muscular
+pele quente
+perda de peso
+queda de cabelo
+tremor
+=======================================
+#NOME
+Carcinoma papilífero
+#CASOS
+150000
+#SINTOMAS
+aumento dos gânglios linfáticos
+inchaço nos gânglios linfáticos
+nódulo nas gânglios linfáticos
+nódulo de tireoide
+========================================================
+#NOME
+Nódulo de tireoide
+#CASOS
+2000000
+#SINTOMAS
+caroço no pescoço
+tireóide aumentada
+===========================================
