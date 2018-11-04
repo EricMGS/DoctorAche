@@ -1170,3 +1170,83 @@ cólicas
 depressão
 perda de peso
 ======================================================
+#NOME
+Diverticulite
+#CASOS
+150000
+#SINTOMAS
+dor no abdômen
+dor naparte lateral do corpo
+constipação
+diarreia
+inchaço gastrointestinal
+flatulência
+febre
+========================================================
+#NOME
+Refluxo gastroesofágico
+#CASOS
+2000000
+#SINTOMAS
+dor na parte superior do abdômen
+dor crônica no peito
+tosse crônica
+tosse depois de comer
+tosse à noite
+tosse seca
+arroto
+azia
+indigestão
+náusea
+regurgitação
+vômito
+flatulência
+quantidades excessivas de gases
+dor
+irritação
+pigarro
+secura
+boca amarga
+choro
+cólica do bebê
+desconforto na região superior do abdômen
+dificuldade em adormecer
+dificuldades com a alimentação do bebê
+mau hálito
+pressão no peito
+regurgitação crônica
+rouquidão
+========================================================
+#NOME
+Intolerância à lactose
+#CASOS
+2000000
+#SINTOMAS
+dor no abdômen
+arroto
+diarreia
+gordura nas fezes
+inchaço
+indigestão
+náusea
+dores de estômago
+flatulência
+cólica do bebê
+incapacidade de se desenvolver
+mal-estar
+=======================================================
+#NOME
+Enjoo de movimento
+#CASOS
+150000
+#SINTOMAS
+náusea
+arroto
+vômito
+distúrbio do equilíbrio
+mal-estar
+tontura
+dor de cabeça
+palidez
+palpitações
+========================================================
