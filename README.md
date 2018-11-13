@@ -2,7 +2,7 @@
 Um sistema de apoio a decisão (SAD) que auxilia na identificação de uma doença informando os sintomas
 
 ## Dependências
-- (Python 3)[https://www.python.org/downloads/]
+- [Python 3](https://www.python.org/downloads/)
 - PyQt5
   - Digitar no terminal/cmd/prompt/console o seguinte comando:
   ``` pip install PyQt5 ```
