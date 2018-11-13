@@ -8,9 +8,9 @@ Um sistema de apoio a decisão (SAD) que auxilia na identificação de uma doen�
   ``` pip install PyQt5 ```
   
 ## Tecnologias
-Linguagem de programação: *Python*  
-Interface gráfica: *PyQt5*  
-Banco de dados: *SQLite*  
+Linguagem de programação: *Python 3*  
+Interface gráfica: *PyQt 5*  
+Banco de dados: *SQLite 3*  
   
 ## Como usar
 **OBS: NÃO MOVER NEM RENOMEAR NENHUM ARQUIVO, CASO CONTRÁRIO O SISTEMA NÃO FUNCIONARÁ**
