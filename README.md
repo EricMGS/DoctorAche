@@ -1,20 +1,20 @@
 # DoctorAche
 Um sistema de apoio a decisão (SAD) que auxilia na identificação de uma doença informando os sintomas
-
+  
 ## Dependências
 - [Python 3](https://www.python.org/downloads/)
 - PyQt5
   - Digitar no terminal/cmd/prompt/console o seguinte comando:
   ``` pip install PyQt5 ```
-
+  
 ## Tecnologias
-Linguagem de programação: Python
-Interface gráfica: PyQt5
-Banco de dados: SQLite
-
+Linguagem de programação: Python  
+Interface gráfica: PyQt5  
+Banco de dados: SQLite  
+  
 ## Como usar
 **OBS: NÃO MOVER NEM RENOMEAR NENHUM ARQUIVO, CASO CONTRÁRIO O SISTEMA NÃO FUNCIONARÁ**
-
+  
 ### Esquema de pastas
 O projeto está organizado da seguinte forma:
 - backend
@@ -31,10 +31,10 @@ O projeto está organizado da seguinte forma:
     - icon.png
     - nurse.png
   - main.py(interface gráfica)
-
+  
 ### Executar programa
 Executar o arquivo "/frontend/main.py"
-
+  
 ### Adicionar registros
 Adicionar registros no arquivo "/database/doencas"
 **OBS: MANTER O PADRÃO DO ARQUIVO, CASO CONTRÁRIO O SISTEMA NÃO FUNCIONARÁ**
