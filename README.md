@@ -1,31 +1,44 @@
-[![License: MIT](https://img.shields.io/badge/License-MIT-green.svg)](https://opensource.org/licenses/MIT)
+# DoctorAche
+Um sistema de apoio a decisão (SAD) que auxilia na identificação de uma doença informando os sintomas
 
-# :mask: DoctorAche :mask:
-**Um sistema médico de apoio à decisão que auxilia na identificação da doença de um paciente.**    
-      
 ## Dependências
-- Python 3
+- (Python 3)[https://www.python.org/downloads/]
 - PyQt5
-- sqlite3
+  - Digitar no terminal/cmd/prompt/console o seguinte comando:
+  ``` pip install PyQt5 ```
 
-## Tecnologias usadas  
-![Python](https://clarissewiki.com/3.0/images/module/Python.png)
-![Sqlite3](https://system.data.sqlite.org/images/sqlite128.png)
-![QtDesigner](https://2.bp.blogspot.com/-hqMp3_89cBo/VtGezhob2qI/AAAAAAAABhE/_LDqvxcbXRQ/s1600/qtdesigner.png)
-![PyQt5](https://zhoufeng.gallerycdn.vsassets.io/extensions/zhoufeng/pyqt-integration/0.1.5/1528035265197/Microsoft.VisualStudio.Services.Icons.Default)
-![Git](https://www.benlacy.me/images/skill-logos/git.png)
-![GitHub](https://saviorisdead.gallerycdn.vsassets.io/extensions/saviorisdead/theme-githubcleanwhite/0.0.3/1474455535166/Microsoft.VisualStudio.Services.Icons.Default)
+## Tecnologias
+Linguagem de programação: Python
+Interface gráfica: PyQt5
+Banco de dados: SQLite
 
 ## Como usar
 **OBS: NÃO MOVER NEM RENOMEAR NENHUM ARQUIVO, CASO CONTRÁRIO O SISTEMA NÃO FUNCIONARÁ**
+
+### Esquema de pastas
+O projeto está organizado da seguinte forma:
+- backend
+  - DoctorAche.py (arquivo principal do programa, é ele que gera os resultados)
+  - spellChecker.py (corretor ortográfico)
+- database
+  - database (banco de dados)
+  - doencas (arquivo de texto com todos os registros do banco de dados)
+  - scriptInsercaoBD.py (script para facilitar inserção, remoção e busca de registros individuais no banco de dados)
+  - update.py (insere todas os registros do arquivo "doencas" no banco de dados)
+- frontend
+  - img (imagens usadas na interface)
+    - balao.png
+    - icon.png
+    - nurse.png
+  - main.py(interface gráfica)
+
 ### Executar programa
-Executar o arquivo frontend/main.py   
+Executar o arquivo "/frontend/main.py"
 
 ### Adicionar registros
-Adicionar registros no arquivo database/doencas   
-**OBS: MANTER O PADRÃO, CASO CONTRÁRIO O SISTEMA NÃO FUNCIONARÁ**
+Adicionar registros no arquivo "/database/doencas"
+**OBS: MANTER O PADRÃO DO ARQUIVO, CASO CONTRÁRIO O SISTEMA NÃO FUNCIONARÁ**
+Após isso atualizar o banco de dados executando o arquivo "/database/update.py"
 
-### Atualizar base de dados
-Para atualizar o banco de dados executar o arquivo database/update.py   
      
   
