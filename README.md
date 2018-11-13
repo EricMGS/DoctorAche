@@ -15,6 +15,9 @@ Banco de dados: *SQLite 3*
 ## Como usar
 **OBS: NÃO MOVER NEM RENOMEAR NENHUM ARQUIVO, CASO CONTRÁRIO O SISTEMA NÃO FUNCIONARÁ**
   
+### Executar programa
+Executar o arquivo "/frontend/main.py"
+
 ### Esquema de pastas
 O projeto está organizado da seguinte forma:
 - **backend**
@@ -36,9 +39,6 @@ O projeto está organizado da seguinte forma:
 - *LICENSE* 
 - *README.md*
 - *slides.pptx* 
-
-### Executar programa
-Executar o arquivo "/frontend/main.py"
   
 ### Adicionar registros
 Adicionar registros no arquivo "/database/doencas"  
