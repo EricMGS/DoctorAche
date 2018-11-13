@@ -41,8 +41,8 @@ O projeto está organizado da seguinte forma:
 Executar o arquivo "/frontend/main.py"
   
 ### Adicionar registros
-Adicionar registros no arquivo "/database/doencas"
-**OBS: MANTER O PADRÃO DO ARQUIVO, CASO CONTRÁRIO O SISTEMA NÃO FUNCIONARÁ**
+Adicionar registros no arquivo "/database/doencas"  
+**OBS: MANTER O PADRÃO DO ARQUIVO, CASO CONTRÁRIO O SISTEMA NÃO FUNCIONARÁ**  
 Após isso atualizar o banco de dados executando o arquivo "/database/update.py"
 
      
