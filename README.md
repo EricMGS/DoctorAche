@@ -1,6 +1,8 @@
 # [DoctorAche](https://github.com/ericmgs/DoctorAche)
 Um sistema de apoio a decisão (SAD) que auxilia na identificação de uma doença informando os sintomas
   
+<img src="https://raw.githubusercontent.com/EricMGS/DoctorAche/master/image.png" alt="Project Image"/>    
+
 ATENÇÃO!!! ESSE É UM PROJETO ACADÊMICO, NÃO USÁ-LO EM SITUAÇÕES REAIS    
   
 ## Dependências
