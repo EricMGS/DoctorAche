@@ -10,7 +10,7 @@
 import sqlite3
 import os 
 import sys
-sys.path.append('../backend/')
+sys.path.append('../modules/')
 from spellChecker import spellChecker as sc
 
 #########################################################################################
