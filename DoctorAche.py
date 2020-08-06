@@ -1,12 +1,12 @@
 #!/usr/bin/env python3
 # -*- coding: utf-8 -*-
 
-from spellChecker import spellChecker as sc
+from modules.spellChecker import spellChecker as sc
 import sqlite3
 
 class DoctorAche():
 	def __init__(self):
-		self.database = sqlite3.connect('../database/database')
+		self.database = sqlite3.connect('./database/database')
 		self.cursor = self.database.cursor()
 
 		self.lista_doencas = []

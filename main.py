@@ -1,7 +1,6 @@
 # -*- coding: utf-8 -*-
 
 import sys
-sys.path.append('../backend/')
 from PyQt5 import QtCore, QtGui, QtWidgets
 from PyQt5.QtCore import Qt, QSortFilterProxyModel
 from PyQt5.QtWidgets import QCompleter, QComboBox
@@ -99,13 +98,13 @@ class Ui_MainWindow(object):
         MainWindow.setWindowTitle("DoctorAche")
 
         self.img_dr = QtWidgets.QLabel(MainWindow)
-        self.img_dr.setPixmap(QtGui.QPixmap('img/nurse.png'))
+        self.img_dr.setPixmap(QtGui.QPixmap('assets/img/nurse.png'))
         self.img_dr.setScaledContents(True)
         self.img_dr.setObjectName("img_dr")
         self.img_dr.setGeometry(25, 200, 200, 300)
 
         self.img_balao = QtWidgets.QLabel(MainWindow)
-        self.img_balao.setPixmap(QtGui.QPixmap('img/balao.png'))
+        self.img_balao.setPixmap(QtGui.QPixmap('assets/img/balao.png'))
         self.img_balao.setScaledContents(True)
         self.img_balao.setObjectName("img_balao")
         self.img_balao.setGeometry(25, 20, 250, 200)
