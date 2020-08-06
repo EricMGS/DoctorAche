@@ -1,6 +1,8 @@
 # [DoctorAche](https://github.com/ericmgs/DoctorAche)
 Um sistema de apoio a decisão (SAD) que auxilia na identificação de uma doença informando os sintomas
   
+ATENÇÃO!!! ESSE É UM PROJETO ACADÊMICO, NÃO USÁ-LO EM SITUAÇÕES REAIS    
+  
 ## Dependências
 - [Python 3](https://www.python.org/downloads/)
 - PyQt5
