@@ -3,7 +3,7 @@
   
 <img src="https://raw.githubusercontent.com/EricMGS/DoctorAche/master/image.png" alt="Project Image"/>   
 
-ATENÇÃO!!! ESSE É UM PROJETO ACADÊMICO, NÃO USÁ-LO EM SITUAÇÕES REAIS    
+<p align='center'>ATENÇÃO!!! ESSE É UM PROJETO ACADÊMICO, NÃO USÁ-LO EM SITUAÇÕES REAIS</p>    
 
 <h2 align='center'>Instruções - Linux</h2>   
    
