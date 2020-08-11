@@ -5,7 +5,7 @@
 
 ATENÇÃO!!! ESSE É UM PROJETO ACADÊMICO, NÃO USÁ-LO EM SITUAÇÕES REAIS     
 
-<h2 align='center'>Instruções - Linux</h2>   
+<h2 align='center'>Instruções</h2>   
    
 ### Dependências   
 - [Python 3](https://www.python.org/downloads/)   
