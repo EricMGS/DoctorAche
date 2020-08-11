@@ -13,10 +13,15 @@ ATENÇÃO!!! ESSE É UM PROJETO ACADÊMICO, NÃO USÁ-LO EM SITUAÇÕES REAIS
   ``` pip install PyQt5 ```
   
  ### Execução
-    
+Executar com Python o arquivo main.py   
+```python3 main.py```   
  
 <h2 align='center'>Feito com</h2>  
   
 Linguagem de programação: *Python 3*  
 Interface gráfica: *PyQt 5*  
 Banco de dados: *SQLite 3*  
+
+<h2 align='center'>Licença</h2>   
+   
+Esse projeto é licenciado sobre a Licença MIT - veja o arquivo [LICENSE.md]() para detalhes.   
