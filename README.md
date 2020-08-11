@@ -5,14 +5,17 @@
 
 ATENÇÃO!!! ESSE É UM PROJETO ACADÊMICO, NÃO USÁ-LO EM SITUAÇÕES REAIS    
 
-<h2 align='center'>Dependências</h2>  
-  
-- [Python 3](https://www.python.org/downloads/)
-- PyQt5
-  - Digitar no terminal/cmd/prompt/console o seguinte comando:
+<h2 align='center'>Instruções - Linux</h2>   
+   
+### Dependências   
+- [Python 3](https://www.python.org/downloads/)   
+- PyQt5   
   ``` pip install PyQt5 ```
   
-<h2 align='center'>Tecnologias</h2>  
+ ### Execução
+    
+ 
+<h2 align='center'>Feito com</h2>  
   
 Linguagem de programação: *Python 3*  
 Interface gráfica: *PyQt 5*  
