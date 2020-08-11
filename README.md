@@ -24,4 +24,4 @@ Banco de dados: *SQLite 3*
 
 <h2 align='center'>Licença</h2>   
    
-Esse projeto é licenciado sobre a Licença MIT - veja o arquivo [LICENSE.md]() para detalhes.   
+Esse projeto é licenciado sobre a Licença MIT - veja o arquivo [LICENSE.md](https://github.com/EricMGS/DoctorAche/blob/master/LICENSE) para detalhes.   
